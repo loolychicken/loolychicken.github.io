@@ -1,0 +1,1286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("images/papper0.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+@font-face {
+    font-family: Mohave;
+    src: url("fonts/Mohave.otf");
+}
+@font-face {
+    font-family: Mensch;
+    src: url("fonts/mensch-thin.ttf");
+}
+#fullpage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+}
+.section.work .wrapper,
+.section.work .hundred {
+    height: auto;
+}
+.homePage,
+.aboutMePage,
+.contactPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.homePage .fourty {
+    overflow: hidden;
+}
+.sixty {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-color: transparent;
+}
+.fourty {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+    overflow: hidden;
+}
+.hundred {
+    width: 100%;
+    height: 100%;
+    padding: 0px 35px;
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+}
+.menuWrapper {
+    width: 60%;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    background-color: transparent;
+    z-index: 999999;
+    transition: all .4s linear;
+}
+.homeImg {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/0.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -100%;
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+.active .homeImg {
+    margin-top: 0px;
+    opacity: 1;
+}
+.section.inactive .homeImg {
+    margin-top: 100%;
+    opacity: 0;
+}
+.navigation {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+.navigation li {
+    width: 115px;
+    display: inline-block;
+    margin-right: 40px;
+    border: 1px solid #818181;
+    text-align: center;
+    padding: 3px 0px;
+}
+.navigation li:last-child {
+    margin-right: 0%;
+}
+.fp-viewing-firstPage .homeLink,
+.fp-viewing-secondPage .aboutMeLink,
+.fp-viewing-3rdPage .workLink,
+.fp-viewing-4thPage .contactLink {
+    height: 0px;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    border-bottom: none;
+    width: 80px;
+}
+.pageLink {
+    font-family: Mensch;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+.pageLink:hover {
+    font-weight: 600;
+}
+.gone {
+    font-family: Mensch;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+}
+.content {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    font-family: Mohave;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #1E1E1E;
+    font-weight: 400;
+}
+h2 {
+    font-family: Mohave;
+    font-size: 32px;
+    color: #3C3C3C;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.shadow:hover {
+    text-shadow: 1px 1px #606060;
+}
+.webName {
+    width: 280px;
+    position: relative;
+    left: 105%;
+    top: 50%;
+    z-index: 99;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+.active .webName {
+    position: absolute;
+    left: 85%;
+    opacity: 1;
+}
+.inactive .webName {
+    left: 45%;
+    opacity: 0;
+}
+.welcomeMsg {
+    width: 50%;
+    position: relative;
+    left: -10%;
+    top: 53%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.active .welcomeMsg {
+    position: absolute;
+    left: 10%;
+    opacity: 1;
+}
+.inactive .welcomeMsg {
+    left: 30%;
+    opacity: 0;
+}
+.pageName {
+    width: 50%;
+    position: relative;
+    left: 84%;
+    top: 67%;
+    z-index: 99;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.active .pageName {
+    position: absolute;
+    top: 47%;
+    opacity: 1;
+}
+.inactive .pageName {
+    top: 7%;
+    opacity: 0;
+}
+.sideText {
+    width: 65%;
+    position: relative;
+    left: -10%;
+    top: 37%;
+    text-align: justify;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+.active .sideText {
+    position: absolute;
+    left: 10%;
+    opacity: 1;
+}
+.inactive .sideText {
+    top: 67%;
+    left: 10%;
+    opacity: 0;
+}
+.bodyText {
+    font-family: Mohave;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #3C3C3C;
+}
+.bodyLink {
+    color: #3C3C3C;
+    text-decoration: none;
+}
+.aboutImgWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -100%;
+    opacity: 0;
+    transition: all 1.5s ease-in;
+}
+.active .aboutImgWrapper {
+    opacity: 1;
+    margin-top: 0px;
+}
+.inactive .aboutImgWrapper {
+    margin-top: 100%;
+    opacity: 0;
+}
+.aboutImg {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/8.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background 2s linear;
+}
+.contactImg {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/37.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.active .contactImg {
+    margin-top: 0px;
+    opacity: 1;
+}
+.contactImg:hover {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.pageCName {
+    width: 50%;
+    position: relative;
+    left: 58%;
+    top: 50%;
+    z-index: 99;
+    opacity: 0;
+    transition: all 3s ease-in-out;
+}
+.active .pageCName {
+    position: absolute;
+    opacity: 1;
+    left: 78%;
+}
+.goodbyeMsg {
+    width: 40%;
+    position: relative;
+    left: -10%;
+    top: 39%;
+    z-index: 99;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+.active .goodbyeMsg {
+    position: absolute;
+    left: 10%;
+    opacity: 1;
+}
+.workWrapper {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.workBox {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.descriptionBox {
+    width: 170px;
+    left: 26%;
+    top: 62%;
+    transform: translateY(-62%);
+    text-align: left;
+    position: absolute;
+    z-index: 999;
+    transition: all 1.5s ease-in-out;
+}
+.workBox.active .descriptionBox {
+    left: 0;
+}
+.workTitle {
+    font-family: Mohave;
+    display: block;
+    font-size: 40px;
+    color: #1E1E1E;
+    text-align: right;
+}
+.siteDescription {
+    font-family: Mensch;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    left: 0;
+    top: 59%;
+    z-index: 99;
+}
+.siteImg {
+    display: inline-block;
+    opacity: 0;
+    transition: all 3s ease-in-out;
+}
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #8c8b8b;
+    left: 0;
+    top: 58%;
+    z-index: 99;
+}
+.workBox.active .siteImg {
+    opacity: 0.6;
+}
+.siteLink {
+    position: absolute;
+    left: 53%;
+    top: 47%;
+    cursor: pointer;
+    transition: all 1.5s ease-in-out;
+}
+.workBox.active .siteLink {
+    left: 90%;
+}
+.siteLink img {
+    width: 40px;
+    height: auto;
+}
+.siteLink:hover {
+    left: 94% !important;
+}
+.overflow {
+    overflow: hidden;
+}
+.centered {
+    width: 100% !important;
+}
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s linear;
+}
+#myVideo.display {
+    opacity: 1;
+}
+.home,
+.about,
+.contact {
+    overflow: hidden;
+}
+.resumeLink {
+    font-family: Mohave;
+    color: #3C3C3C;
+    text-decoration: none;
+    -webkit-animation: pulsate 1.5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+.home.active .fp-scroller {
+    overflow: visible;
+    height: 100%;
+}
+.about.active .fp-scroller {
+    overflow: visible;
+    height: 100%;
+}
+.contact.active .fp-scroller {
+    overflow: visible;
+    height: 100%;
+}
+@media all and (max-width: 1335px) {
+    .workWrapper {
+        width: 80%;
+    }
+}
+@media all and (max-width: 1310px) {
+    .active .webName {
+        left: 84%;
+    }
+    .pageName {
+        left: 83%;
+    }
+    .active .pageCName {
+        left: 77%;
+    }
+    .descriptionBox {
+        left: 28%;
+    }
+}
+@media all and (max-width: 1270px) {
+    .workWrapper {
+        width: 84%;
+    }
+    .active .webName {
+        left: 83%;
+    }
+    .pageName {
+        left: 82%;
+    }
+    .active .pageCName {
+        left: 76%;
+    }
+    .descriptionBox {
+        left: 31%;
+    }
+    .navigation li {
+        margin-right: 37px;
+    }
+}
+@media all and (max-width: 1200px) {
+    .workWrapper {
+        width: 87%;
+    }
+    .pageName {
+        left: 81%;
+    }
+    .active .pageCName {
+        left: 74%;
+    }
+    .navigation li {
+        margin-right: 33px;
+    }
+}
+@media all and (max-width: 1160px) {
+    .workWrapper {
+        width: 93%;
+    }
+    .active .webName {
+        left: 82%;
+    }
+    .active .sideText,
+    .active .goodbyeMsg,
+    .active .welcomeMsg {
+        left: 7%;
+    }
+    .pageName {
+        left: 80%;
+    }
+    .active .pageCName {
+        left: 72%;
+    }
+    .navigation li {
+        margin-right: 30px;
+    }
+}
+@media all and (max-width: 1100px) {
+    .welcomeMsg {
+        top: 50%;
+    }
+    .active .webName {
+        left: 80%;
+    }
+    .sideText {
+        top: 28%;
+    }
+    .pageName {
+        left: 78%;
+    }
+    .siteImg {
+        width: 75%;
+    }
+    .goodbyeMsg {
+        top: 32%;
+    }
+    .active .pageCName {
+        left: 70%;
+    }
+}
+@media all and (max-width: 1020px) {
+    .navigation li {
+        margin-right: 25px;
+        width: 110px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 31px;
+    }
+    .descriptionBox {
+        top: 60%;
+    }
+    .siteLink {
+        top: 45%;
+        left: 55%;
+    }
+}
+@media all and (max-width: 970px) {
+    h1 {
+        font-size: 47px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .active .webName {
+        left: 79%;
+    }
+    .pageName {
+        left: 77%;
+    }
+    .descriptionBox {
+        top: 59%;
+    }
+    .siteLink {
+        top: 44%;
+        left: 57%;
+    }
+    .active .pageCName {
+        left: 69%;
+    }
+}
+@media all and (max-width: 930px) {
+    .navigation li {
+        margin-right: 20px;
+        width: 105px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 29px;
+    }
+    .welcomeMsg {
+        top: 48%;
+    }
+    .sideText {
+        top: 26%;
+    }
+    .descriptionBox {
+        top: 58%;
+    }
+    .siteLink {
+        top: 43%;
+        left: 59%;
+    }
+}
+@media all and (max-width: 900px) {
+    .navigation li {
+        margin-right: 18px;
+        width: 100px;
+    }
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 70px;
+    }
+    .active .webName {
+        left: 78%;
+    }
+    .active .sideText,
+    .active .goodbyeMsg,
+    .active .welcomeMsg {
+        left: 5%;
+    }
+    .pageName {
+        left: 76%;
+    }
+    .descriptionBox {
+        top: 54%;
+    }
+    .siteLink {
+        top: 39%;
+    }
+    .active .pageCName {
+        left: 68%;
+    }
+}
+@media all and (max-width: 870px) {
+    .menuWrapper,
+    .sixty {
+        width: 55%;
+    }
+    .fourty {
+        width: 45%;
+    }
+    .navigation li {
+        margin-right: 15px;
+        width: 95px;
+    }
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 55px;
+    }
+    .active .sideText,
+    .active .goodbyeMsg,
+    .active .welcomeMsg {
+        left: 3%;
+    }
+    .goodbyeMsg {
+        width: 50%;
+    }
+    .welcomeMsg {
+        top: 37%;
+    }
+    h1 {
+        font-size: 43px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    .active .webName {
+        left: 75%;
+    }
+    .sideText {
+        top: 14%;
+    }
+    .pageName {
+        left: 73%;
+    }
+    .siteLink {
+        top: 34%;
+        left: 63%;
+    }
+    .descriptionBox {
+        top: 49%;
+    }
+    .active .pageCName {
+        left: 63%;
+    }
+}
+@media all and (max-width: 800px) {
+    .navigation li {
+        margin-right: 10px;
+        width: 90px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h1 {
+        font-size: 41px;
+    }
+    .siteLink {
+        top: 27%;
+        left: 65%;
+    }
+    .descriptionBox {
+        top: 43%;
+    }
+    .workTitle {
+        font-size: 38px;
+    }
+    .workBox.active .descriptionBox {
+        left: -30px;
+    }
+    .pageCName {
+        width: 60%;
+    }
+    .active .sideText,
+    .active .goodbyeMsg,
+    .active .welcomeMsg {
+        left: 2%;
+    }
+}
+@media all and (max-width: 750px) {
+    .wrapper {
+        padding: 25px;
+    }
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 40px;
+    }
+    .welcomeMsg {
+        top: 45%;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .sideText {
+        top: 12%;
+    }
+    .bodyText {
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 720px) {
+    .gone {
+        display: none;
+    }
+    .navigation li {
+        width: 70px;
+    }
+    .menuWrapper,
+    .sixty {
+        width: 50%;
+    }
+    .fourty {
+        width: 50%;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .bodyText {
+        font-size: 18px;
+    }
+    .workTitle {
+        font-size: 35px;
+    }
+    .siteDescription {
+        font-size: 17px;
+    }
+}
+@media all and (max-width: 700px) {
+    .navigation li {
+        width: 65px;
+    }
+    .welcomeMsg {
+        top: 43%;
+    }
+    .goodbyeMsg {
+        width: 55%;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    .active .webName {
+        left: 74%;
+    }
+    .sideText {
+        top: 10%;
+        text-align: left;
+    }
+    .pageName {
+        left: 71%;
+    }
+    .descriptionBox {
+        width: 145px;
+        left: 24%;
+    }
+    .siteLink {
+        left: 57%;
+    }
+    .siteImg {
+        width: 85%;
+    }
+    .workBox.active .descriptionBox {
+        left: -40px;
+    }
+    .workBox.active .siteLink {
+        left: 95%;
+    }
+    .siteLink:hover {
+        left: 100% !important;
+    }
+    .active .pageCName {
+        left: 61%;
+    }
+}
+@media all and (max-width: 670px) {
+    .sideText {
+        width: 71%;
+    }
+}
+@media all and (max-width: 630px) {
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 25px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .active .webName {
+        left: 73%;
+    }
+    .welcomeMsg {
+        top: 37%;
+    }
+    .siteImg {
+        width: 90%;
+    }
+    .workBox.active .siteLink {
+        left: 97%;
+    }
+    .siteLink img {
+        width: 35px;
+        height: auto;
+    }
+    .workTitle {
+        font-size: 33px;
+    }
+    .descriptionBox {
+        width: 125px;
+    }
+    .goodbyeMsg {
+        top: 25%;
+    }
+    .workBox {
+        height: 280px;
+        margin-bottom: 85px;
+    }
+    .sideText {
+        width: 85%;
+        text-align: justify;
+    }
+    .active .pageName {
+        display: none;
+    }
+}
+@media all and (max-width: 600px) {
+    .bodyText {
+        font-size: 17px;
+    }
+    .active .webName {
+        left: 72%;
+    }
+    .pageName {
+        left: 69%;
+    }
+    .goodbyeMsg {
+        top: 19%;
+    }
+    .active .pageCName {
+        left: 57%;
+    }
+    .workBox {
+        height: 250px;
+        margin-bottom: 75px;
+    }
+    .descriptionBox {
+        top: 46%;
+    }
+}
+@media all and (max-width: 570px) {
+    .pageCName {
+        display: none;
+    }
+    .sideText {
+        width: 90%;
+        text-align: justify;
+        top: 20%;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    h1 {
+        font-size: 31px;
+    }
+    .workTitle {
+        font-size: 30px;
+    }
+    .descriptionBox {
+        top: 46%;
+    }
+    .goodbyeMsg {
+        top: 24%;
+    }
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 60px;
+    }
+    .navigation li {
+        width: 90px;
+        margin-right: 20px;
+    }
+    .active .webName {
+        left: 71%;
+    }
+    .menuWrapper {
+        width: 100%;
+        background-image: url("images/papper0.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 10%;
+        padding-top: 25px;
+        top: 0px;
+        position: fixed;
+    }
+    .siteLink img {
+        width: 33px;
+    }
+    .siteLink {
+        top: 25%;
+        left: 62%;
+    }
+    .workBox {
+        height: 230px;
+    }
+}
+@media all and (max-width: 520px) {
+    .goodbyeMsg {
+        width: 70%;
+        top: 36%;
+    }
+}
+@media all and (max-width: 500px) {
+    .navigation li {
+        width: 85px;
+        margin-right: 15px;
+    }
+    .welcomeMsg {
+        top: 30%;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .active .webName {
+        left: 67%;
+    }
+    .sideText {
+        top: 12%;
+    }
+    .workTitle {
+        font-size: 28px;
+    }
+    .siteDescription {
+        font-size: 16px;
+    }
+    .descriptionBox {
+        width: 105px;
+        top: 53%;
+    }
+    .siteLink img {
+        width: 30px;
+    }
+    .workBox {
+        height: 200px;
+        margin-bottom: 75px;
+    }
+    .siteLink {
+        top: 29%;
+    }
+    .goodbyeMsg {
+        width: 57%;
+        top: 13%;
+    }
+}
+@media all and (max-width: 480px) {
+    .sixty {
+        float: none;
+        width: 100%;
+        height: 60%;
+    }
+    .fourty {
+        float: none;
+        width: 100%;
+        height: 40%;
+    }
+    .active .webName {
+        left: 5%;
+        width: 5%;
+        top: 53%;
+        word-break: break-all;
+        text-align: center;
+    }
+    .inactive .webName {
+        left: -20%;
+        top: 53%;
+        opacity: 0;
+    }
+    .webName {
+        left: -20%;
+        position: relative;
+        z-index: 99;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+    }
+    .welcomeMsg {
+        top: 15%;
+        left: 80%;
+        z-index: 99;
+        position: relative;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+    }
+    .active .welcomeMsg {
+        left: 45%;
+        text-align: right;
+        opacity: 1;
+    }
+    .inactive .welcomeMsg {
+        left: 80%;
+        opacity: 0;
+    }
+    .menuWrapper {
+        background: transparent;
+    }
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 50px;
+    }
+    .active .sideText,
+    .active .goodbyeMsg {
+        left: 0;
+    }
+    .sideText {
+        width: 100%;
+        top: 11%;
+        left: -20%;
+    }
+    .active .sideText {
+        left: 0%;
+    }
+    .inactive .sideText {
+        top: 37%;
+        left: 20%;
+    }
+    .goodbyeMsg {
+        width: 100%;
+        top: 16%;
+    }
+    .workBox {
+        height: 190px;
+        margin-bottom: 65px;
+    }
+    .active .pageCName {
+        left: 90%;
+        top: 34%;
+    }
+    .pageCName {
+        width: 5%;
+        word-break: break-all;
+        transition: all 1.5s ease-in-out;
+        top: 10%;
+        left: 90%;
+        display: block;
+        z-index: 99;
+        position: relative;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+    }
+    .active .pageName {
+        top: 94%;
+        opacity: 1;
+        left: 35%;
+    }
+    .inactive .pageCName {
+        left: 55%;
+        opacity: 0;
+    }
+    .pageName {
+        display: block;
+        left: -5%;
+        top: 94%;
+        position: relative;
+        z-index: 99;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+    }
+    .inactive .pageName {
+        top: 94%;
+        left: 70%;
+        opacity: 0;
+    }
+    .siteLink {
+        left: 65%;
+    }
+}
+@media all and (max-width: 420px) {
+    .navigation li {
+        width: 80px;
+        margin-right: 12px;
+    }
+    .siteImg {
+        width: 100%;
+    }
+    .workBox.active .siteLink {
+        left: 102%;
+    }
+    .siteLink:hover {
+        left: 107% !important;
+    }
+    .workBox.active .siteImg {
+        opacity: 0.4;
+    }
+    .descriptionBox {
+        left: 18%;
+    }
+    .siteLink {
+        left: 62%;
+    }
+}
+@media all and (max-width: 400px) {
+    .active .welcomeMsg {
+        top: 12%;
+    }
+    .sideText {
+        top: 3%;
+    }
+    .workTitle {
+        font-size: 26px;
+    }
+    .siteDescription {
+        font-size: 15px;
+    }
+    .siteLink img {
+        width: 25px;
+    }
+    .siteLink {
+        left: 68%;
+    }
+    .descriptionBox {
+        width: 90px;
+    }
+    .active .goodbyeMsg {
+        width: 80%;
+    }
+    .navigation li {
+        width: 70px;
+    }
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 40px;
+    }
+}
+@media all and (max-width: 370px) {
+    .wrapper {
+        padding: 20px;
+    }
+    .navigation li {
+        width: 65px;
+    }
+    .active .welcomeMsg {
+        top: 21%;
+        width: 70%;
+        left: 29%;
+    }
+    .bodyText {
+        font-size: 16px;
+    }
+    .workTitle {
+        font-size: 24px;
+    }
+    .workBox {
+        height: 130px;
+    }
+    .descriptionBox {
+        top: 65%;
+        left: 16%;
+    }
+    .siteLink {
+        left: 60%;
+    }
+    .active .goodbyeMsg {
+        width: 87%;
+    }
+    .active .pageCName {
+        left: 93%;
+    }
+    .home.active .fp-scroller {
+        overflow: visible;
+        height: 100%;
+    }
+}
+@media all and (max-width: 350px) {
+    .fp-viewing-firstPage .homeLink,
+    .fp-viewing-secondPage .aboutMeLink,
+    .fp-viewing-3rdPage .workLink,
+    .fp-viewing-4thPage .contactLink {
+        width: 30px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .active .sideText {
+        top: 9%;
+    }
+    .bodyText {
+        font-size: 15px;
+    }
+    .menuWrapper {
+        padding-top: 15px;
+    }
+    .pageLink {
+        font-size: 15px;
+    }
+    .goodbyeMsg {
+        top: 27%;
+    }
+    .descriptionBox {
+        left: 10%;
+    }
+}
