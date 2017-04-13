@@ -1,0 +1,2752 @@
+ *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	width: 100%;
+	background-color: #FFFFFF;
+	font-family: Times New Roman;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.bodywrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.headerwrapper{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	margin-bottom: 100px;
+}
+.sidebar{
+	position: absolute;
+	width: 50px;
+    top: 0;
+    left: 10px;
+    background: transparent;
+	margin-top: 30px;
+	display: none;
+}
+.icons,.logo,.reservationButton{
+	width: 33%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+.icons{
+	padding-top: 60px;
+}
+.reservationButton{
+	padding-top: 70px;
+}
+.logo{
+	padding-top: 20px;
+}
+
+.siteLogo,.siteName{
+	display: block;
+	width: 42%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 5px;
+}
+.logoDesign{
+	color: #D2C5B7;
+	height: 2px;
+	background-color: #D2C5B7;
+	border: none;
+}
+.titleP{
+	font-family: Times New Roman;
+	font-size: 15px;
+	color: #AF967D;
+	letter-spacing: 2px;
+}
+.italicP{
+	font-family: Times New Roman;
+	font-size: 12px;
+	font-style: italic;
+	color: #D2C5B7;
+}
+.myButton {
+	background-color: transparent;
+	border: 1px solid #af967d;
+	display: inline-block;
+	cursor: pointer;
+	color: #af967d;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+.myButton:hover {
+	background-color: transparent;
+}
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+.aboutUsPage{
+	width: 100%;
+	position: relative;
+	margin-bottom: 150px;
+}
+.bigTitle, .contentAbout{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.bigTitle{
+	text-align: left;
+}
+.textAbout{
+	width: 30%;
+	display: inline-block;
+	padding-left: 60px;
+	padding-top: 20px;
+	position: relative;
+	vertical-align: top;
+}
+.oysterPic{
+	width: 69%;
+	display: inline-block;
+	margin-top: -105px;
+	margin-left: -50px;
+	position: absolute;
+}
+h1{
+	font-family: Times New Roman;
+	font-size: 150px;
+	font-weight: bold;
+	color: #DCD6C5;
+	margin: 10px 40px 10px 60px;
+}
+h2{
+	font-family: Times New Roman;
+	font-size: 24px;
+	font-style: italic;
+	color: #AF967D;
+	padding-bottom: 20px;
+}
+.ordinaryText{
+	font-family: Times New Roman;
+	font-size: 18px;
+	line-height: 26px;
+	color: #7D7A7A;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+.titleDesign{
+	color: #EFEAE5;
+	height: 1px;
+	background-color: #EFEAE5;
+	border: none;
+	width: 220px;
+}
+.middleWrapper{
+	width: 100%;
+	margin-bottom: 250px;
+}
+.menuSection{
+	width: 100%;
+	position: relative;
+	display: block;
+}
+.leftPlate{
+	width: 49%;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	right: 45%;
+	z-index: 5;
+	transform: rotateZ(0deg);
+	transition: all 1s ease-in-out;
+}
+.leftPlate.hidden {
+	right: 20%;
+	transform: rotateZ(180deg);
+}
+.rightBox{
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	z-index: 6;
+}
+.menuBox{
+	width: 500px;
+	height: 650px; 
+	background-color: #31241E;
+	position: relative;
+	z-index: 7;
+	float: right;
+	margin-right: 250px;	
+}
+.horizontalBorder{
+	width: 92%;
+	height: 94%; 
+	background-color: transparent;
+	border-left: 1px solid #AF967D;
+	border-right: 1px solid #AF967D;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.verticalBorder{
+	width: 96%;
+	height: 91%; 
+	background-color: transparent;
+	border-bottom: 1px solid #AF967D;
+	border-top: 1px solid #AF967D;
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.introduction{
+	width: 100%;
+	position: relative;
+	display: block;
+}
+.leftBox{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 150px;
+	margin-top: -180px;
+	z-index: 5;
+}
+.introductionBox{
+	width: 500px;
+	height: 650px; 
+	background-color: #AF967D;
+	position: relative;
+	z-index: 8;
+}
+.horBorder{
+	width: 92%;
+	height: 94%; 
+	background-color: transparent;
+	border-left: 1px solid #31241E;
+	border-right: 1px solid #31241E;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.verBorder{
+	width: 96%;
+	height: 91%; 
+	background-color: transparent;
+	border-bottom: 1px solid #31241E;
+	border-top: 1px solid #31241E;
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.rightPlate{
+	width: 49%;
+	display: inline-block;
+	margin-left: -150px;
+	vertical-align: top;
+	margin-top: -80px;
+	z-index: 5;
+	transform: rotateZ(0deg);
+	transition: all 1s ease-in-out;
+}
+.rightPlate.hidden {
+	margin-left: -540px;
+	transform: rotateZ(-180deg);
+}
+.menuButton {
+	background-color: transparent;
+	border: 1px solid  #AF967D;
+	display: block;
+	cursor: pointer;
+	color:  #FFFFFF;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px 20px;
+	text-decoration: none;
+	width: 140px;
+	text-align: center;
+	margin-top: 20px;
+}
+.menuButton:hover {
+	background-color: transparent;
+}
+.menuButton:active {
+	position: relative;
+	top: 1px;
+}
+.classichr{
+	color: #AF967D;
+	height: 1px;
+	background-color: #AF967D;
+	border: none;
+	width: 60px;
+	margin-bottom: 20px;
+}
+h3{
+	font-family: Trebuchet MS;
+	font-size: 36px;
+	font-style: normal;
+	letter-spacing: 5px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	padding-bottom: 20px;
+}
+.boxText{
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	line-height: 26px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: bold;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+h4{
+	font-family: Trebuchet MS;
+	font-size: 36px;
+	font-style: normal;
+	letter-spacing: 5px;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+}
+.classichrcolor{
+	color: #31241E;
+	height: 1px;
+	background-color: #31241E;
+	border: none;
+	width: 60px;
+	margin-bottom: 20px;
+}
+.resButton {
+	background-color: transparent;
+	border: 1px solid #31241E;
+	display: block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px 20px;
+	text-decoration: none;
+	width: 220px;
+	text-align: center;
+	margin-top: 50px;
+}
+.resButton:hover {
+	background-color: transparent;
+}
+.resButton:active {
+	position: relative;
+	top: 1px;
+}
+.locationWrapper{
+	width: 100%;
+	position: relative;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+.interiorPic{
+	width: 58%;
+	height: 480px;
+	display: inline-block;
+	background-color: transparent; 
+}
+.verBorderFrame  img{
+	width: 500px;
+	height: auto;
+}
+.locationText{
+	width: 40%;
+	display: inline-block;
+	background-color: transparent;
+	vertical-align: top;
+	padding-top: 100px;
+	margin-left: -50px;
+}
+.horBorderFrame{
+	width: 540px;
+	height: 440px; 
+	background-color: transparent;
+	border-left: 1px solid #AF967D;
+	border-right: 1px solid #AF967D;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.verBorderFrame{
+	width: 560px;
+	height: 420px; 
+	background-color: transparent;
+	border-bottom: 1px solid #AF967D;
+	border-top: 1px solid #AF967D;
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+h5{
+	font-family: Trebuchet MS;
+	font-size: 36px;
+	font-style: normal;
+	letter-spacing: 5px;
+	color: #31241E;
+	padding-bottom: 20px;
+}
+.floatingPng{
+	width: auto;
+	display: block;
+	position: relative;
+	margin-top: -300px;
+	margin-left: 900px;
+}
+.offerWrapper{
+	width: 100%;
+	position: relative;
+	margin-bottom: 100px;
+}
+.offerText{
+	width: 40%;
+	display: inline-block;
+	background-color: transparent;
+	padding-top: 100px;
+	padding-left: 40px;
+	vertical-align: top;
+}
+.mealPic{
+	width: 50%;
+	height: 460px;
+	display: inline-block;
+	background-color: transparent; 
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.mealPic img{
+	width: 500px;
+	height: auto;
+}
+.justPng{
+	width: 100%;
+	margin-bottom: -250px;
+}
+.footerWrapper{
+	width: 100%;
+	display: block;
+	margin-bottom: 100px;
+}
+.infoBox{
+	width: 74%;
+	display: inline-block;
+	background-color: #31241E;
+	vertical-align: top; 
+	position: relative;
+	padding-top: 120px;
+	padding-left: 100px;
+	min-height: 800px;
+}
+.pictureBox{
+	width: 26%;
+	min-height: 800px;
+	background-image: url("photos/green.png");
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	margin-left: -5px;
+}
+.details{
+	width: 45%;
+	display: inline-block;
+	text-align: left;
+	background-color: transparent;
+}
+.openingHours{
+	width: 45%;
+	display: inline-block;
+	background-color: transparent;
+	vertical-align: top;
+	border-left: 1px solid #AF967D;
+	padding-left: 60px;
+	margin-left: -40px;
+}
+h6{
+	font-family: Trebuchet MS;
+	font-size: 30px;
+	font-style: normal;
+	letter-spacing: 3px;
+	color: #AF967D;
+	padding-bottom: 20px;
+}
+.bigText{
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	font-style: normal;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+.infoText{
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	line-height: 10px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: normal;
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+.hBorderBox{
+	width: 95%;
+	height: 96%;
+	background-color: transparent;
+	border-left: 1px solid #AF967D;
+	border-right: 1px solid #AF967D;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+}
+.vBorderBox{
+	width: 98%;
+	height: 93%;
+	background-color: transparent;
+	border-bottom: 1px solid #AF967D;
+	border-top: 1px solid #AF967D;
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+span{
+	float: right;
+}
+a{
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	line-height: 10px;
+	color: #AF967D;
+	opacity: 0.8;
+	font-style: normal;
+	padding-top: 20px;
+	text-decoration: none;
+}
+
+.footerButton {
+	background-color: transparent;
+	border: 1px solid #AF967D;
+	display: block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px 20px;
+	text-decoration: none;
+	width: 220px;
+	text-align: center;
+	margin-top: 100px;
+}
+.footerButton {
+	background-color: transparent;
+}
+.footerButton {
+	position: relative;
+	top: 1px;
+}
+
+.reservationWrapper{
+	width: 100%;
+	display: none;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.mainPicture{
+	width: 100%;
+	height: 385px;
+	margin-top: -150px;
+	background-image: url("photos/lob.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 100px;
+}
+.reservationBox{
+	width: 100%;
+	height: 620px;
+	position: relative;
+	display: block;
+	margin-bottom: 100px;
+}
+.dateTime {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #AF967D;
+    margin-right: -5px;
+    padding: 20px;
+    position: relative;
+}
+.personalInfo{
+	width: 59%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #31241E;
+	position: relative;
+    padding: 20px;
+}
+.horizontalFrame{
+    width: 92%;
+    height: 95%;
+    background-color: transparent;
+    border-left: 1px solid #31241E;
+    border-right: 1px solid #31241E;
+    position: absolute;
+    top: 15px;
+    
+}
+.verticalFrame {
+    width: 96%;
+    height: 93%;
+    background-color: transparent;
+    border-bottom: 1px solid #31241E;
+    border-top: 1px solid #31241E;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.hFrame {
+    width: 95%;
+    height: 95%;
+    background-color: transparent;
+    border-left: 1px solid #AF967D;
+    border-right: 1px solid #AF967D;
+    position: absolute;
+    top: 15px;
+}
+.vFrame {
+    width: 97%;
+    height: 93%;
+    background-color: transparent;
+    border-bottom: 1px solid #AF967D;
+    border-top: 1px solid #AF967D;
+    position: absolute;
+    top: 20px;
+    left: 13px;
+}
+.leftForm{
+	background-color: transparent;
+	border: 1px solid #31241E; 
+	display: inline-block;
+	margin-top: 10px;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: normal;
+	padding: 10px 10px;
+}
+.inputText{
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: bold;
+	margin-top: 50px;
+	margin-bottom: 20px; 
+}
+.buttonForm{
+	background-color: transparent;
+	border: 1px solid #31241E; 
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: normal;
+	padding: 10px 10px;
+}
+.formsInput{
+	width: 100%;
+	padding-top: 40px;
+	padding-left: 60px;
+}
+.infoForms{
+	width: 100%;
+	padding-top: 40px;
+	padding-left: 60px;
+	
+}
+.rightForm{
+	background-color: transparent;
+	border: 1px solid #AF967D; 
+	display: inline-block;
+	margin-top: 10px;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: normal;
+	padding: 10px 10px;
+}
+.buttonSub{
+	background-color: transparent;
+	border: 1px solid #AF967D; 
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: normal;
+	padding: 10px 10px;
+}
+.messageForm{
+	background-color: transparent;
+	border: 1px solid #AF967D; 
+	display: block;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: normal;
+	padding: 10px 10px;
+	width: 80%;
+}
+input:focus{
+    outline: none !important;
+}
+textarea:focus{
+	outline: none !important;
+}
+.persText{
+	width: 120px;
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-style: bold;
+	margin-top: 50px;
+	margin-bottom: 20px; 
+	display: inline-block;
+	margin-left: 20px;
+}
+.menuPageButton{
+	background-color: transparent;
+	border: 1px solid #af967d;
+	display: inline-block;
+	cursor: pointer;
+	color: #af967d;
+	font-family: Trebuchet MS;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 15px;
+	text-decoration: none;
+	width: 120px;
+	text-align: center;
+}
+.menuPageButton:hover {
+	background-color: transparent;
+}
+.menuPageButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.menuWrapper{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: none;
+}
+.menuWpapperPic{
+	width: 100%;
+	height: 350px;
+	display: block;
+	background-image: url("photos/mm.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	margin-top: -100px;
+}
+.menuOffer{
+	width: 100%;
+	background-color: #F7F4F0;
+	padding-top: 80px;
+	padding-left: 50px;
+	padding-bottom: 150px;
+	position: relative;
+}
+.menuItemBox{
+	width: 98%;
+	position: relative;
+}
+.hMenuFrame{
+	width: 96%;
+	height: 99%;
+	background-color: transparent;
+	border-left: 1px solid #AF967D;
+	border-right: 1px solid #AF967D;
+	position: absolute;
+	top: 20px;
+	left: 25px;
+	z-index: 5;
+}
+.vMenuFrame{
+	width: 98%;
+	height: 98%;
+	background-color: transparent;
+	border-bottom: 1px solid #AF967D;
+	border-top: 1px solid #AF967D;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	z-index: 5;
+}
+.dishPic{
+	margin-left: 30px;
+	display: inline-block;
+	margin-right: 50px;
+	margin-bottom: 80px;
+}
+.menuheadline{
+	margin-bottom: 10px;
+	font-family: Trebuchet MS;
+	font-size: 32px;
+	color: #AF967D; 
+	opacity: 0.8;
+	text-align: center;
+}
+.classichrMenu{
+    color: #AF967D;
+	height: 2px;
+	background-color: #AF967D;
+	border: none;
+	width: 60px;
+	margin-bottom: 100px;
+	margin-left: 465px;
+}
+.dishName{
+	margin-top: 90px;
+	font-family: Times New Roman;
+	font-size: 22px;
+	color: #AF967D; 
+	opacity: 0.8;
+	display: inline-block;
+	vertical-align: top;
+	width: 600px;
+	letter-spacing: 2px;
+	font-style: italic;
+}
+
+.dishPng{
+	width: 100%;
+	margin-top: -300px;
+	z-index: 7;
+	position: relative;
+    padding-left: 270px;
+    overflow: hidden;
+}
+
+
+
+@media all and (max-width: 1210px) {
+
+	.siteLogo, .siteName {
+		width: 47%;
+	}
+	h1{
+		font-size: 145px;
+	}
+
+	.oysterPic img{
+		width: 770px;
+		height: auto;
+	}
+	.floatingPng {
+		margin-left: 770px;
+	}
+	.locationText {
+		margin-left: 5px;
+	}
+	.mealPic{
+		right: 55px;
+	}
+	.infoBox{
+		padding-left: 85px;
+	}
+	.menuBox {
+		margin-right: 190px;
+	}
+	.personalInfo {
+		width: 60%;
+	}
+	.horizontalFrame {
+		width: 90%;
+	}
+	.verticalFrame {
+		width: 94%;
+	}
+	.vFrame {
+		width: 96%;
+	}
+	.hFrame {
+		width: 94%;
+	}
+	.vMenuFrame {
+		width: 97%;
+		height: 97%;
+		top: 35px;
+		left: 13px;
+	}
+	.hMenuFrame {
+		width: 95%;
+		height: 97.5%;
+	}
+	.classichrMenu {
+		display: none;
+	}
+	.menuheadline {
+		margin-bottom: 100px;
+	}
+	.dishPng{
+		margin-top: -325px;
+	}
+}
+@media all and (max-width: 1175px) {
+	
+	.rightPlate.hidden {
+		margin-left: -470px;
+	}
+	.rightPlate {
+		margin-left: -116px;
+	}
+}
+
+@media all and (max-width: 1110px) {
+	
+	.rightPlate.hidden {
+		margin-left: -410px;
+	}
+	.rightPlate {
+		margin-left: -106px;
+	}
+}
+
+@media all and (max-width: 1050px) {
+	
+	.siteLogo, .siteName {
+		width: 50%;
+	}
+	.oysterPic img{
+		width: 750px;
+		height: auto;
+	}
+	.oysterPic{
+		margin-top: -90px;
+	}
+	.menuBox {
+		margin-right: 120px;
+	}
+	.floatingPng {
+		margin-left: 750px;
+	}
+	.horBorderFrame {
+		width: 520px;
+		height: 420px;
+		}
+	.verBorderFrame {
+		width: 540px;
+		height: 400px;
+		}
+	
+	.verBorderFrame img {
+		width: 480px;
+		height: auto;
+	}
+	.mealPic img {
+		width: 480px;
+		height: auto;
+	}
+	.locationText {
+		width: 37%;
+		padding-top: 80px;
+		margin-left: -15px;
+	}
+	.offerText {
+		width: 41%;
+		padding-top: 80px;
+		padding-left: 40px;
+	}
+	.pictureBox {
+		width: 20%;
+	}
+	.infoBox {
+		width: 80%;
+		padding-left: 75px;
+	}
+	.hBorderBox {
+		width: 94%;
+	}
+	.justPng {
+		margin-bottom: -190px;
+		padding-left: 100px;
+	}
+	.justPng img{
+		width: 550px;
+	}
+	.formsInput {
+		padding-left: 40px;
+	}
+	.dishPng {
+		padding-left: 190px;
+	}
+	.dishPic {
+		margin-left: 0px;
+	}
+	.rightPlate.hidden {
+		margin-left: -360px;
+	}
+	.rightPlate {
+		margin-left: -95px;
+	}
+
+}
+
+@media all and (max-width: 1000px) {
+
+	.siteLogo, .siteName {
+		width: 51%;
+	}
+	h1 {
+		font-size: 135px;
+	}
+	.oysterPic {
+		margin-left: -25px;
+	}
+	.oysterPic img {
+		width: 705px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.ordinaryText {
+		font-size: 17px;
+	}
+	.floatingPng {
+		margin-left: 670px;
+	}
+	.locationText {
+		margin-left: 30px;
+	}
+	.mealPic {
+		right: 90px;
+	}
+	.offerText {
+		width: 37%;
+	}
+	.infoBox {
+		width: 85%;
+		padding-left: 60px;
+	}
+	.pictureBox {
+		width: 15%;
+	}
+	.mainPicture {
+		background-size: contain;
+	}
+	.formsInput {
+		padding-left: 30px;
+	}
+	.infoForms {
+		padding-left: 40px;
+	}
+	.hFrame {
+		width: 93%;
+	}
+	.dishPic {
+		margin-right: 25px;
+	}
+	.dishName {
+		width: 520px;
+	}
+	.dishPng {
+		padding-left: 130px;
+		margin-top: -315px;
+	}
+	.dishPng img{
+		width: 900px;
+	}
+	.rightPlate.hidden {
+		margin-left: -340px;
+	}
+	.rightPlate {
+		margin-left: -85px;
+	}
+}
+
+
+@media all and (max-width: 970px) {
+
+	.siteLogo, .siteName {
+		width: 55%;
+	}
+	h1 {
+		font-size: 130px;
+	}
+	.oysterPic {
+		margin-top: -57px;
+	}
+	.oysterPic img {
+		width: 660px;
+	}
+	.rightPlate.hidden {
+		margin-left: -290px;
+	}
+	.rightPlate {
+		margin-left: -65px;
+	}
+	.floatingPng {
+		margin-left: 620px;
+	}
+	.locationText {
+		width: 33%;
+		margin-left: 50px;
+		padding-top: 40px;	
+	}
+	.offerText {
+		width: 35%;
+		padding-top: 40px;
+		padding-left: 35px;
+	}
+	.mealPic {
+		right: 115px;
+	}
+	.justPng img {
+		width: 530px;
+	}
+	.justPng {
+		margin-bottom: -180px;
+		padding-left: 125px;
+	}
+	h6 {
+		font-size: 24px;
+	}
+	.bigText {
+		font-size: 18px;
+	}
+	.infoText, .boxText {
+		font-size: 16px;
+	}
+	h3, h4 {
+		font-size: 34px;
+	}
+	.mainPicture {
+		margin-top: -135px;
+		margin-bottom: -15px;
+	}
+	.formsInput {
+		padding-left: 20px;
+	}
+	.infoForms {
+		padding-left: 25px;
+	}
+	.dishName {
+		width: 500px;
+	}
+	.dishPng {
+		padding-left: 140px;
+		margin-top: -305px;
+	}
+	.dishPng img{
+		width: 850px;
+	}
+}
+
+@media all and (max-width: 920px) {
+
+	.siteLogo, .siteName {
+		width: 57%;
+	}
+	h1 {
+		font-size: 123px;
+	}
+	.oysterPic img {
+		width: 620px;
+	}
+	.textAbout {
+		padding-left: 35px;
+	}
+	.floatingPng {
+		margin-left: 580px;
+	}
+	.verBorderFrame img {
+		width: 460px;
+	}
+	.horBorderFrame {
+		width: 500px;
+	}
+	.verBorderFrame{
+		width: 520px;
+	}
+	.mealPic img{
+		width: 460px;
+		margin-top: 7px;
+	}
+	.offerText {
+		padding-left: 20px;
+	}
+	.justPng img {
+		width: 510px;
+	}
+	.justPng {
+		margin-bottom: -165px;
+		padding-left: 135px;
+	}
+	.formsInput {
+		padding-left: 15px;
+	}
+	.infoForms {
+		padding-left: 10px;
+	}
+	.dishName {
+		width: 440px;
+	}
+	.menuheadline{
+		font-size: 30px;
+	}
+	.dishName {
+		font-size: 20px;
+	}
+	.dishPng {
+		padding-left: 150px;
+		margin-top: -295px;
+	}
+	.dishPng img{
+		width: 800px;
+	}
+}
+
+@media all and (max-width: 880px) {
+	
+	.siteLogo, .siteName {
+		width: 59%;
+	}
+	h1 {
+		font-size: 115px;
+	}
+	.oysterPic img {
+		width: 600px;
+	}
+	.verBorderFrame img {
+		width: 350px;
+	}
+	.horBorderFrame {
+		width: 390px;
+		height: 328px;
+	}
+	.interiorPic{
+		width: 52%;
+	}
+	.verBorderFrame {
+		width: 410px;
+		height: 306px;
+	}
+	h3, h4 {
+		font-size: 31px;
+	}
+	.menuBox {
+		margin-right: 75px;
+	}
+	.leftBox {
+		padding-left: 55px;
+	}
+	.floatingPng {
+		margin-left: 535px;
+	}
+	h5 {
+		font-size: 33px;
+	}
+	.locationText {
+		width: 42%;
+		margin-left: 25px;
+		padding-top: 10px;
+	}
+	.locationWrapper{
+		margin-bottom: 20px;
+	}
+	.verBorderFrame img {
+		margin-top: 0px;
+	}
+	.mealPic {
+		right: 30px;
+	}
+	.offerText {
+		padding-left: 25px;
+		padding-top: 10px;
+		width: 46%;
+	}
+	.offerWrapper {
+		margin-bottom: 60px;
+	}
+	.justPng img {
+		width: 485px;
+	}
+	.horizontalFrame {
+		width: 89%;
+	}
+	.verticalFrame {
+		width: 95%;
+	}
+	.hFrame {
+		width: 92%;
+	}
+	.vFrame {
+		width: 95%;
+	}
+	.leftForm {
+		font-size: 15px;
+	}
+	.buttonForm{
+		margin-left: 10px;
+		font-size: 15px;
+	}
+	.buttonSub {
+		font-size: 15px;
+	}
+	.rightForm {
+		font-size: 15px;
+	}
+	.persText {
+		width: 110px;
+	}
+	.persText, .inputText {
+		font-size: 19px;
+	}
+	.hMenuFrame {
+		width: 94%;
+	}
+	.dishPng {
+		padding-left: 100px;
+		margin-top: -275px;
+	}
+	.dishPng img{
+		width: 700px;
+	}
+	
+}
+
+
+@media all and (max-width: 830px) {
+
+	.icons, .logo, .reservationButton{
+		width: 32%;
+	}
+	.siteLogo, .siteName {
+		width: 65%;
+	}
+	h1 {
+		font-size: 110px;
+	}
+	.oysterPic img {
+		width: 580px;
+	}
+	.menuBox {
+		margin-right: 40px;
+	}
+	.leftBox {
+		padding-left: 40px;
+	}
+	.menuBox, .introductionBox {
+		width: 480px;
+		height: 620px;
+	}
+	.verticalBorder {
+		padding-top: 75px;
+	}
+	.verBorder {
+		padding-top: 65px;
+	}
+	.floatingPng img{
+		height: 250px;
+	}
+	.floatingPng {
+		margin-left: 595px;
+	}
+	h5 {
+		font-size: 29px;
+	}
+	.mealPic {
+		right: 40px;
+	}
+	.justPng img {
+		width: 455px;
+	}
+	.justPng {
+		margin-bottom: -145px;
+		padding-left: 140px;
+	}
+	h6 {
+		font-size: 22px;
+	}
+	.infoBox {
+		width: 87%;
+		padding-left: 45px;
+	}
+	.pictureBox {
+		width: 13%;
+	}
+	.bigText {
+		font-size: 17px;
+	}
+	.footerButton {
+		font-size: 15px;
+		padding: 16px 16px;
+		width: 200px;
+	}
+	.hBorderBox {
+		width: 93%;
+	}
+	.vBorderBox {
+		width: 97%;
+	}
+	.formsInput{
+		padding-top: 20px;
+	}
+	.buttonForm {
+		margin-left: 0px;
+	}
+	.persText {
+		width: 100px;
+	}
+	.infoForms {
+		 padding-top: 20px;
+		 padding-left: 0px;
+	}
+	.menuItemBox img{
+		width: 200px;
+		height: auto;
+	}
+	.dishPng {
+		padding-left: 100px;
+		margin-top: -255px;
+	}
+	.dishPng img{
+		width: 600px;
+	}
+}
+
+
+@media all and (max-width: 800px) {
+
+	.siteLogo, .siteName {
+		width: 69%;
+	}
+	h1 {
+		font-size: 105px;
+	}
+	.headerwrapper {
+		margin-bottom: 50px;
+	}
+	.textAbout {
+		width: 40%;
+		padding-left: 28px;
+	}
+	.leftPlate img{
+		width: 350px;
+	}
+	.leftPlate{
+		top: 70px;
+		right: 38%;
+	}
+	.leftPlate.hidden {
+		right: 12%;
+	}
+	.rightPlate img{
+			width: 350px;
+		}
+	.rightPlate{
+		margin-left: -55px;
+		margin-top: 25px;
+	}
+	.rightPlate.hidden {
+		margin-left: -280px;
+	}
+	.oysterPic img {
+		width: 450px;
+	}
+	.oysterPic {
+		margin-top: -15px;
+	}
+
+	.menuBox, .introductionBox {
+		width: 400px;
+		height: 660px;
+	}
+	.horizontalBorder, .horBorder {
+		width: 90%;
+	}
+	.verticalBorder, .verBorder {
+		width: 95%;
+	}
+	h3, h4 {
+		font-size: 30px;
+	}
+	.floatingPng {
+		margin-left: 545px;
+	}
+
+	.interiorPic {
+		width: 68%;
+		height: 450px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.verBorderFrame img {
+		width: 420px;
+	}
+	.horBorderFrame {
+		width: 460px;
+		height: 375px;
+	}
+	.verBorderFrame {
+		width: 480px;
+		height: 356px;
+	}
+	.locationText,  .offerText{
+		width: 100%;
+		margin-left: 0px;
+		padding: 35px;
+		padding-top: 0px;
+	}
+	h5 {
+		font-size: 28px;
+	}
+	.mealPic{
+		width: 68%;
+		height: 450px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		margin-top: 0px;
+		right: 0px;
+	}
+	.justPng img {
+		width: 420px;
+	}
+	.justPng {
+		margin-bottom: -130px;
+	}
+	.infoBox {
+		width: 100%;
+		padding-left: 60px;
+		display: block;
+	}
+	.pictureBox {
+		display: none;
+	}
+	.footerWrapper {
+		margin-bottom: 0px;
+	}
+	.mainPicture {
+		margin-top: -105px;
+		margin-bottom: -90px;
+	}
+	.dateTime, .personalInfo {
+		width: 100%;
+		display: block;
+		padding-bottom: 100px;
+	}
+	.reservationBox {
+		height: 100%;
+		margin-bottom: 0px;
+	}
+	.formsInput {
+		padding-left: 120px;
+	}
+	.infoForms {
+		padding-left: 75px;
+	}
+	.persText, .inputText {
+		font-size: 20px;
+	}
+	.leftForm {
+		font-size: 16px;
+	}
+	.buttonForm {
+		margin-left: 20px;
+	}
+
+	.horizontalFrame, .hFrame {
+		width: 94%;
+	}
+	.verticalFrame {
+		width: 97%;
+	}
+	.vFrame{
+		width: 97%;
+		left: 10px;
+	}
+	.menuItemBox img {
+		width: 160px;
+	}
+	.dishPng img {
+		width: 580px;
+	}
+	.dishPng {
+		padding-left: 110px;
+		margin-top: -240px;
+	}
+	.myButton {
+		padding: 10px 22px;
+	}
+}
+
+@media all and (max-width: 750px) {
+
+	.icons img{
+		width: 45px;
+	}
+	.siteLogo img{
+		width: 110px;	
+	}
+	.siteLogo, .siteName {
+		width: 73%;
+	}
+	.myButton {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	h1 {
+		font-size: 97px;
+		margin-left: 30px;
+	}
+	.oysterPic img {
+		width: 440px;
+	}
+	.oysterPic {
+		margin-top: -42px;
+	}
+	.ordinaryText {
+		font-size: 16px;
+	}
+	h2 {
+		font-size: 21px;
+	}
+	.titleDesign {
+		width: 190px;
+	}
+	h3, h4 {
+		font-size: 26px;
+	}
+	.leftPlate.hidden {
+		right: 10%;
+	}
+	.rightPlate img{
+			width: 300px;
+	}
+	.menuButton {
+		font-size: 15px;
+		padding: 15px 20px;
+		width: 120px;
+		margin-top: 0px;
+	}
+	.menuPageButton {
+		font-size: 15px;
+		padding: 10px 12px;
+		width: 105px;
+	}
+	.infoText, .boxText {
+		font-size: 15px;
+		line-height: 25px;	
+	}
+	.resButton {
+		font-size: 15px;
+		padding: 15px 20px;
+		width: 195px;
+		margin-top: 0px;	
+	}
+	.menuBox, .introductionBox {
+		width: 347px;
+		height: 620px;
+	}
+	.verticalBorder {
+		padding-top: 60px;
+	}
+	.verBorder {
+		padding-top: 60px;
+	}
+	.menuBox {
+		margin-right: 90px;
+	}
+	.leftBox {
+		padding-left: 90px;
+	}
+	.horizontalBorder, .horBorder {
+		width: 89%;
+	}
+	.floatingPng img {
+		height: 230px;
+	}
+	.floatingPng {
+		margin-left: 533px;
+	}
+	.interiorPic, .mealPic  {
+		width: 71%;
+	}
+	h5 {
+		font-size: 27px;
+	}
+	.justPng img {
+		width: 390px;
+	}
+	.justPng {
+		margin-bottom: -122px;
+		padding-left: 155px;	
+	}
+	.footerButton {
+		padding: 13px 16px;
+		width: 185px;
+	}
+	.menuOffer {
+		padding-left: 0px;
+	}
+	.menuItemBox {
+		text-align: center;
+	}
+	.menuItemBox img {
+		width: 195px;
+		margin-right: 0px;
+		margin-bottom: 25px;
+		display: block;
+		margin: 0 auto;
+	}
+	.dishName {
+		margin-top: 0px;
+		padding-top: 30px;
+		margin-bottom: 65px;
+	}
+	.dishPng img {
+		width: 520px;
+	}
+	.hMenuFrame {
+		width: 93%;
+	}
+	.vMenuFrame {
+		width: 96%;
+	}
+
+}
+
+@media all and (max-width: 700px) {
+
+	.siteLogo, .siteName {
+		width: 78%;
+	}
+
+	h1 {
+		font-size: 88px;
+		margin-left: 65px;
+	}
+
+	.oysterPic {
+		margin-left: -40px;
+	}
+	.oysterPic img {
+		width: 425px;
+	}
+	.floatingPng img {
+		height: 170px;
+	}
+	.floatingPng {
+		margin-left: 526px;
+	}
+	.interiorPic, .mealPic {
+		width: 77%;
+	}
+	h5 {
+		font-size: 25px;
+	}
+	.justPng img {
+		width: 355px;
+	}
+	.justPng {
+		margin-bottom: -110px;
+	}
+	.infoBox {
+		padding-top: 90px;
+		padding-left: 50px;
+	}
+	.infoText, .boxText {
+		line-height: 20px;
+	}
+	.leftPlate{
+		right: 45%;
+	}
+	.leftPlate.hidden {
+		right: 10%;
+	}
+	.rightPlate img{
+			width: 300px;
+		}
+	.rightPlate.hidden {
+		margin-left: -260px;
+	}
+
+}
+
+@media all and (max-width: 650px) {
+		
+	.icons img {
+		width: 40px;
+	}
+	.siteLogo, .siteName {
+		width: 81%;
+	}
+	.icons, .reservationButton {
+		width: 30%;
+	}
+	.logo {
+		width: 33%;
+		margin-right: 25px;
+	}
+	h1 {
+		font-size: 80px;
+	}
+	.oysterPic img {
+		width: 405px;
+	}
+
+	.menuBox {
+		margin-right: 55px;
+	}
+	.leftBox {
+		padding-left: 70px;
+	}
+	.floatingPng {
+		margin-left: 495px;
+	}
+	.floatingPng img {
+		height: 165px;
+	}
+	.interiorPic, .mealPic {
+		width: 81%;
+	}
+	.hBorderBox {
+		width: 92%;
+	}
+	.openingHours {
+		width: 50%;
+		border-left: none;
+		padding-left: 74px;
+	}
+	.boxText{
+		width: 90%;
+	}
+	.dishPng img {
+		width: 500px;
+	}
+	.dishPng {
+		padding-left: 80px;
+		margin-top: -230px;
+	}
+	.menuOffer {
+		padding-left: 0px;
+	}
+	.mainPicture {
+		height: 325px;
+	}
+	.hMenuFrame {
+		width: 92%;
+	}
+	.leftPlate.hidden {
+		right: 6%;
+	}
+	.rightPlate img{
+			width: 300px;
+		}
+	.rightPlate.hidden {
+		margin-left: -240px;
+	}
+	.rightPlate {
+		margin-top: -35px;
+	}
+}
+
+@media all and (max-width: 630px) {
+
+	.sidebar{
+		display: inline-block;
+		z-index: 999;
+	}
+	.icons, .reservationButton {
+		display: none;
+	}
+	.logo {
+		width: 38%;
+		margin-right: 0px;
+	}
+	.headerwrapper {
+		text-align: center;
+	}
+	.oysterPic img {
+		width: 395px;
+	}
+	.oysterPic {
+		margin-left: -13px;
+	}
+	.textAbout {
+		width: 35%;
+		padding-left: 15px;
+	}
+	h3, h4 {
+		font-size: 25px;
+	}
+	.menuBox {
+		height: 550px;
+		margin-bottom: 90px;
+	}
+	.introductionBox{
+		height: 685px;
+		margin-bottom: 100px;
+	}
+	
+	.verBorder, .verticalBorder {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.floatingPng img {
+		height: 155px;
+	}
+	.floatingPng {
+		margin-left: 470px;
+	}
+	.interiorPic, .mealPic {
+		width: 86%;
+	}
+	h5 {
+		font-size: 24px;
+	}
+	.justPng img {
+		width: 335px;
+	}
+	.justPng {
+		margin-bottom: -105px;
+		padding-left: 140px;
+	}
+	.details, .openingHours {
+		width: 100%;
+		display: block;
+	}
+	.infoBox {
+		padding-left: 192px;
+		padding-bottom: 45px;
+	}
+	.footerButton {
+		margin-top: 35px;
+		margin-bottom: 80px;
+	}
+	.openingHours {
+		padding-left: 0px;
+	}
+	.boxText {
+		width: 70%;
+	}
+	.vBorderBox {
+		height: 94%;
+	}
+	.infoForms {
+		padding-left: 60px;
+	}
+	.mainPicture {
+		height: 315px;
+	}
+	.leftPlate.hidden {
+		right: 8%;
+	}
+	.leftPlate {
+		right: 50%;
+	}
+	.rightPlate.hidden {
+		margin-left: -200px;
+	}
+	.rightPlate {
+		margin-left: -15px;
+	}
+}
+
+@media all and (max-width: 600px) {
+
+	h1 {
+		font-size: 71px;
+	}
+	.oysterPic img {
+		width: 330px;
+	}
+	.textAbout {
+		width: 40%;
+	}
+	h3, h4 {
+		font-size: 23px;
+	}
+	.menuButton {
+		padding: 13px 20px;
+		width: 117px;
+	}
+	.resButton {
+		padding: 13px 20px;
+		width: 192px;
+	}
+	.leftPlate.hidden {
+		right: 5%;
+	}
+	.rightPlate {
+		margin-left: -35px;
+	}
+	.floatingPng {
+		margin-left: 420px;
+	}
+	.floatingPng img {
+		height: 150px;
+	}
+	.interiorPic, .mealPic {
+		width: 94%;
+	}
+	h5 {
+		font-size: 22px;
+	}
+	.justPng img {
+		width: 315px;
+	}
+	.justPng {
+		margin-bottom: -100px;
+		padding-left: 105px;
+	}
+	.infoBox {
+		padding-left: 175px;
+	}
+	.formsInput {
+		padding-left: 100px;
+	}
+	.horizontalFrame, .hFrame {
+		width: 92%;
+	}
+	.verticalFrame, .vFrame {
+		width: 96%;
+	}
+	.mainPicture {
+		height: 305px;
+	}
+	.infoForms {
+		padding-left: 35px;
+	}
+	.dishPng img {
+		width: 460px;
+	}
+	.dishPng {
+		padding-left: 50px;
+	}
+}
+
+@media all and (max-width: 550px) {
+
+	.siteLogo, .siteName {
+		width: 85%;
+	}
+	.sidebar img{
+		width: 40px;	
+	}
+	h1 {
+		font-size: 64px;
+	}
+	.oysterPic {
+		margin-left: -9px;
+	}
+	.oysterPic img {
+		width: 310px;
+	}
+	.textAbout {
+		width: 40%;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	.menuBox {
+		margin-right: 15px;
+	}
+	.leftBox {
+		padding-left: 15px;
+	}
+	.leftPlate.hidden {
+		display: none;
+	}
+	.rightPlate.hidden	{
+		display: none;
+	}
+	.rightPlate {
+		margin-left: -63px;
+	}
+	.floatingPng {
+		margin-left: 390px;
+	}
+	.verBorderFrame img {
+		width: 375px;
+	}
+	.horBorderFrame {
+		width: 415px;
+		height: 347px;
+	}
+	.verBorderFrame {
+		width: 436px;
+		height: 325px;
+	}
+	.interiorPic, .mealPic {
+		width: 92%;
+	}
+	h5 {
+		font-size: 21px;
+	}
+	.justPng img {
+		width: 285px;
+	}
+	.justPng {
+		margin-bottom: -87px;
+		padding-left: 90px;
+	}
+	.infoBox {
+		padding-left: 155px;
+	}
+	.openingHours {
+		padding-left: 20px;
+	}
+	.dishName {
+		font-size: 18px;
+		width: 390px;
+	}
+	.mainPicture {
+		height: 300px;
+	}
+	.infoForms {
+		padding-left: 20px;
+	}
+	.persText, .inputText {
+		font-size: 18px;
+	}
+	.hMenuFrame {
+		width: 91%;
+	}
+}
+
+@media all and (max-width: 520px) {
+	
+	.siteLogo, .siteName {
+		width: 90%;
+	}
+	.oysterPic {
+		margin-left: -104px;
+		margin-top: -50px;
+	}
+	.textAbout {
+		width: 60%;
+	}
+	.oysterPic img {
+		width: 300px;
+	}
+	.verBorder, .verticalBorder {
+		padding-left: 40px;
+		padding-right: 0px;
+	}
+	.floatingPng {
+		margin-left: 375px;
+	}
+	.introductionBox {
+		height: 600px;
+	}
+	.hBorderBox {
+		width: 90%;
+	}
+	.vBorderBox {
+		width: 96%;
+	}
+	.interiorPic, .mealPic {
+		width: 95%;
+	}
+	.infoBox {
+		padding-left: 145px;
+	}
+	.formsInput {
+		padding-left: 85px;
+	}
+	.infoForms {
+		padding-left: 15px;
+	}
+	.dishPng img {
+		width: 445px;
+	}
+	.dishPng {
+		padding-left: 30px;
+		margin-top: -220px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	h1 {
+		font-size: 62px;
+		margin: 0px 40px;
+	}
+	.textAbout {
+		width: 45%;
+	}
+	.oysterPic img {
+		width: 260px;
+	}
+	.oysterPic {
+		margin-left: -10px;
+		margin-top: -25px;
+	}
+	.menuBox, .introductionBox {
+		width: 295px;
+	}
+	.horizontalBorder, .horBorder {
+		width: 87%;
+	}
+	.verBorder, .verticalBorder {
+		padding-left: 30px;
+	}
+	.introductionBox {
+		height: 650px;
+	}
+
+	.floatingPng {
+		margin-left: 355px;
+	}
+	.verBorderFrame img {
+		width: 330px;
+	}
+	.horBorderFrame {
+		width: 370px;
+		height: 313px;
+	}
+	.verBorderFrame {
+		width: 390px;
+		height: 291px;
+	}
+	.interiorPic, .mealPic {
+		width: 89%;
+		height: 400px;
+	}
+	.justPng img {
+		width: 250px;
+	}
+	.justPng {
+		margin-bottom: -80px;
+		padding-left: 83px;
+	}
+	.infoBox {
+		padding-left: 130px;
+	}
+	.openingHours {
+		padding-left: 45px;
+	}
+	.mainPicture {
+		height: 275px;
+	}
+	.formsInput {
+		padding-left: 70px;
+	}
+	.infoForms form:nth-child(1) input.buttonSub{
+		display: none;
+	}
+	.dishPng img {
+		width: 425px;
+	}
+	.dishPng {
+		padding-left: 15px;
+		margin-top: -210px;
+	}
+
+}
+
+@media all and (max-width: 480px) {
+
+	.siteLogo, .siteName {
+		width: 100%;
+	}
+	h1 {
+		font-size: 60px;
+	}
+	.textAbout {
+		display: none;
+	}
+	.oysterPic {
+		padding-left: 177px;
+		margin-top: -35px;
+		width: 100%;
+	}
+	.aboutUsPage {
+		margin-bottom: 190px;
+	}
+	.menuBox {
+		margin-right: 0px;
+	}
+	.leftBox {
+		padding-left: 0px;
+	}
+	h3, h4 {
+		font-size: 18px;
+	}
+	.rightPlate img {
+		width: 275px;
+	}
+	.floatingPng {
+		margin-left: 330px;
+	}
+	.interiorPic, .mealPic {
+		width: 94%;
+	}
+	.justPng img {
+		width: 240px;
+	}
+	.infoBox {
+		padding-left: 115px;
+	}
+	.hBorderBox {
+		width: 89%;
+	}
+	.mainPicture {
+		height: 265px;
+	}
+	.formsInput {
+		padding-left: 60px;
+	}
+	.horizontalFrame, .hFrame {
+		width: 91%;
+	}
+	.dishName {
+		width: 360px;
+	}
+	.dishPng img {
+		width: 395px;
+	}
+	.dishPng {
+		padding-left: 12px;
+		margin-top: -208px;
+	}
+	.hMenuFrame {
+		width: 90%;
+	}
+	.menuheadline {
+		font-size: 27px;
+	}
+}
+
+@media all and (max-width: 450px) {
+
+	.logo {
+		width: 40%;
+	}
+	h1 {
+		font-size: 53px;
+	}
+	.oysterPic {
+		padding-left: 158px;
+	}
+	h3, h4 {
+		font-size: 19px;
+		letter-spacing: 3px;
+	}
+	.rightPlate {
+		margin-left: -75px;
+	}
+	.floatingPng {
+		margin-left: 298px;
+	}
+	.verBorderFrame img {
+		width: 295px;
+	}
+	.horBorderFrame {
+		width: 335px;
+		height: 285px;
+	}
+	.verBorderFrame {
+		width: 356px;
+		height: 265px;
+	}
+	h5 {
+		font-size: 20px;
+	}
+	.justPng img {
+		width: 225px;
+	}
+	.justPng {
+		margin-bottom: -70px;
+		padding-left: 75px;
+	}
+	.infoBox {
+		padding-left: 100px;
+	}
+	.boxText {
+		width: 76%;
+	}
+	.mainPicture {
+		height: 260px;
+	}
+	.formsInput {
+		padding-left: 45px;
+	}
+	.dishName {
+		width: 329px;
+	}
+	.vMenuFrame {
+		width: 94%;
+	}
+	.hMenuFrame {
+		width: 88%;
+	}
+	.menuheadline {
+		font-size: 25px;
+	}
+	.dishPng img {
+		width: 375px;
+	}
+	.dishPng {
+		padding-left: 0px;
+		margin-top: -200px;
+	}
+
+
+}
+
+@media all and (max-width: 420px) {
+
+	.logo {
+		width: 45%;
+	}
+
+	h1 {
+		font-size: 51px;
+	}
+	.oysterPic img {
+		width: 220px;
+	}
+	.leftPlate, .rightPlate{
+		display: none;
+	}
+	.menuBox {
+		width: 100%;
+		height: 480px; 
+		float: none;
+		display: block;
+		margin-bottom: 0px;
+	}
+	.introductionBox {
+		width: 100%;
+		height: 575px;
+		display: block;
+	}
+	.leftBox {
+		width: 100%;
+		margin-top: 0px;
+	}
+	.horizontalBorder, .horBorder {
+		width: 89%;
+	}
+	.verticalBorder, .verBorder {
+		width: 94%;
+		padding-left: 60px;
+	}
+
+	.resButton, .menuButton {
+		margin-top: 40px;
+	}
+	.verticalBorder {
+		height: 90%;
+	}
+	h3, h4 {
+		font-size: 20px;
+	}
+	.floatingPng {
+		margin-left: 270px;
+	}
+	.interiorPic, .mealPic {
+		width: 99%;
+	}
+	.justPng img {
+		width: 215px;
+	}
+	.infoBox {
+		padding-left: 90px;
+	}
+	.mainPicture {
+		height: 240px;
+	}
+	.formsInput {
+		padding-left: 35px;
+	}
+	.infoForms {
+		padding-left: 0px;
+	}
+	.horizontalFrame, .hFrame {
+		width: 90%;
+	}
+	.verticalFrame, .vFrame {
+		width: 95%;
+	}
+	.dishPng img {
+		width: 370px;
+	}
+
+}
+
+@media all and (max-width: 400px) {
+
+	.logo {
+		width: 50%;
+	}
+	h1 {
+		font-size: 48px;
+		margin: 0px 25px;
+	}
+	.oysterPic {
+		padding-left: 124px;
+		margin-top: -20px;	
+	}
+	.introductionBox {
+		height: 610px;
+		margin-bottom: 0px;
+	}
+	.floatingPng {
+		display: none;
+	}
+	.middleWrapper {
+		margin-bottom: 70px;
+	}
+	.verBorderFrame img {
+		width: 265px;
+	}
+	.horBorderFrame {
+		width: 305px;
+		height: 260px;
+	}
+	.verBorderFrame {
+		width: 325px;
+		height: 241px;
+	}
+	.interiorPic, .mealPic {
+		width: 100%;
+		height: 345px;
+	}
+	.justPng img {
+		width: 200px;
+	}
+	.justPng {
+		margin-bottom: -65px;
+		padding-left: 65px;
+	}
+	.infoBox {
+		padding-left: 65px;
+	}
+	.boxText {
+		width: 86%;
+	}
+	.hBorderBox {
+		width: 86%;
+		height: 97%;
+	}
+	.vBorderBox {
+		width: 95%;
+		height: 95%;
+	}
+	.dishName {
+		width: 255px;
+	}
+	.hMenuFrame {
+		width: 87%;
+	}
+	.dishPng img {
+		width: 350px;
+	}
+	.dishPng {
+		margin-top: -203px;
+	}
+	.formsInput {
+		padding-left: 20px;
+	}
+	.buttonForm {
+		margin-left: 10px;
+	}
+	.horizontalFrame, .hFrame {
+		width: 89%;
+	}
+	.persText, .inputText {
+		font-size: 17px;
+	}
+	.rightForm {
+		display: block;
+		margin-top: 0px;
+		margin-left: 40px;
+	}
+	.persText{
+		margin-left: 40px;	
+	}
+	.messageForm {
+		margin-left: 40px;
+		width: 75%;
+	}
+	.buttonSub {
+		margin-top: 25px;
+		margin-left: 40px;
+	}
+
+}
+
+@media all and (max-width: 360px) {
+
+	.logo {
+		width: 55%;
+	}
+	h1 {
+		font-size: 44px;
+		margin: 0px 20px;
+	}	
+	.oysterPic {
+		padding-left: 110px;
+		margin-top: -22px;
+	}	
+	.oysterPic img {
+		width: 208px;
+	}	
+	.verticalBorder, .verBorder {
+		padding-left: 45px;
+	}	
+	.introductionBox {
+		height: 575px;
+	}	
+	.verBorderFrame img {
+		width: 225px;
+	}	
+	.horBorderFrame {
+		width: 265px;
+		height: 234px;
+	}	
+	.verBorderFrame {
+		width: 285px;
+		height: 212px;
+	}	
+	.interiorPic, .mealPic {
+		height: 295px;
+	}	
+	.locationText, .offerText {
+		padding: 25px;
+	}
+	.justPng img {
+		width: 170px;
+	}
+	.justPng {
+		margin-bottom: -53px;
+		padding-left: 53px;
+	}
+	.hBorderBox {
+		width: 84%;
+	}
+	.vBorderBox {
+		width: 94%;
+	}
+	.infoBox {
+		padding-left: 40px;
+	}
+	h6 {
+		font-size: 20px;
+	}
+	.bigText {
+		font-size: 15px;
+	}
+	.boxText {
+		width: 96%;
+	}
+	.mainPicture {
+		height: 217px;
+	}
+	.horizontalFrame, .hFrame {
+		width: 87%;
+	}
+	.verticalFrame, .vFrame {
+		width: 94%;
+	}
+	.formsInput  form  input:nth-child(3){
+		margin-left: 0px;
+	}
+	.FormsInput {
+		padding-left: 38px;
+	}
+	.persText, .rightForm, .messageForm, .buttonSub {
+		margin-left: 25px;
+	}
+	.messageForm {
+		width: 78%;
+	}
+	.hMenuFrame {
+		width: 85%;
+	}
+	.vMenuFrame {
+		width: 93%;
+	}
+	.menuheadline {
+		font-size: 23px;
+	}
+	.menuItemBox img{
+		margin-left: 57px;	
+	}
+	.dishName {
+		width: 245px;
+	}
+	.dishPng img {
+		width: 325px;
+	}
+	.dishPng {
+		margin-top: -195px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

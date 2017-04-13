@@ -1,0 +1,729 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body,.bodywrapper{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.responsiveMenu{
+	background: #EFEEF4;
+	width: 100%;
+	height: 71px;
+	position: fixed;
+	z-index: 99999;
+	box-shadow: 0 0 10px #000;
+	padding: 20px 20px;
+	top: 0;
+	text-align: center;
+	display: none;
+}
+.icon {
+    margin-left: 15px;
+    float: left;
+    margin-left: 50;
+}
+.icon img{
+	width: 40px;
+}
+.inMenuLogo{
+	width: 20%;
+	display: inline-block;
+	text-align: left;
+}
+.navigation{
+  position: absolute;
+  background: #EFEEF4;
+  width: 100%;
+  left:0;
+  top: -400%;
+  z-index: 999;
+  transition-timing: 1s;
+  box-shadow: 0 0 10px #000;
+}
+.navigation li{
+    list-style: none;
+    text-align: center;
+	display: block;
+}
+.navigation li a{
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+	transition: all 0.5s ease-in-out;
+ }
+.navigation li a:hover{
+     background: #B7B8BA;
+	 box-shadow: 3px 3px 1px #939496;
+  }
+.navigation li:last-child{
+	 margin-right: 30px;
+}
+.down{
+  top: 75px;
+}
+.siteheader{
+	width: 100%;
+	height: 71px;
+	text-align: center;
+}
+.headerCenter{
+   width: 71%;
+   height: 71px;
+   display: inline-block;
+   margin: 0 auto;
+   position: relative;
+}
+.headerName{
+	float: left;
+	width: 15%;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+	color: #525050; 
+	font-family: 'Cutive Mono',serif ;
+}
+ul, li{
+	display: inline-block;
+	list-style: none;
+}
+li{
+	margin-right: 40px;
+}
+li:last-child{
+	margin-right: 0px;
+}
+.logoName{
+	text-decoration: none;
+	display: inline-block;
+	color: #525050; 
+	font-family: 'Cutive Mono',serif ;
+	font-size: 32px;
+	font-weight: 700;
+}
+.headerMenu{
+	top: 22px;
+    left: 200px;
+    width: 85%;
+	position: absolute;
+    height: 28px;
+	font-size:18px;
+}
+.agroup{
+	float: right;
+}
+.sitecontent{
+	width: 100%;
+	height: 589px;
+	background-image: url("slike/b1.jpg");
+    background-size: cover;
+	background-position: center;
+	transition: background 1s linear;	
+}
+.contentCenter{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.contentBox{
+    width: 540px;
+    height: 250px;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+	background-color: rgba(255,255,255, 0.7);
+	display: block;
+	text-align:center;
+}
+.boxstyle{
+	top: 59px;
+    left: 54px;
+    width: 430px;
+    position: absolute;
+    letter-spacing: 0.3em;
+	font-family: 'Cutive Mono',serif ;
+}
+h2{
+	font-size: 30px;
+	color: black;
+	line-height: 200%;
+}
+h3{
+	font-family: 'Cutive Mono',serif;
+    font-size: 24px;
+    color: black;
+    line-height: 200%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+p{
+	font-family: 'Cutive Mono',serif ;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.pAbout{
+	font-family: 'Cutive Mono',serif ;
+	font-size: 16px;
+	line-height: 18px;
+}
+.pCenter{
+	font-family: 'Cutive Mono',serif ;
+	font-size: 18px;
+	color: #73919C;
+	text-decoration: underline;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+.collectioncontent{
+	display: none;
+	width: 100%;
+	background-color: white;
+}
+.row{
+    width: 70%;
+	height: 300px;
+	margin-bottom: 100px;
+	margin: 0 auto;
+}
+.product{
+	float: left;
+	width: 24%;
+	margin-right: 1%;
+	margin-bottom: 50px;
+}
+.product:last-child{
+	margin-right: 0px;
+}
+.imgJewelry1{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/1a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry1:hover{
+	background-image: url("slike/1b.jpg");
+	transition: background 0.5s linear;
+}
+.imgJewelry2{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/2a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry2:hover{
+	background-image: url("slike/2b.jpg");
+	transition: background 0.5s linear;
+}
+.imgJewelry3{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/3a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry3:hover{
+	background-image: url("slike/3b.jpg");
+	transition: background 0.5s linear;
+}
+.imgJewelry4{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/4a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry4:hover{
+	background-image: url("slike/4b.jpg");
+	transition: background 0.5s linear;
+}
+.imgJewelry5{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/5a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry5:hover{
+	background-image: url("slike/5b.jpg");
+	transition: background 0.5s linear;
+}
+.imgJewelry6{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/6a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry6:hover{
+	background-image: url("slike/6b.jpg");
+	transition: background 0.5s linear;
+}
+.imgJewelry7{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/7a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry7:hover{
+	background-image: url("slike/7b.jpg");
+	transition: background 0.5s linear;
+}
+.imgJewelry8{
+	width: 220px;
+	height: 220px;
+	display: block;
+	background-image: url("slike/8a.jpg");
+	background-size: cover;
+	position: absoulte;
+}
+.imgJewelry8:hover{
+	background-image: url("slike/8b.jpg");
+	transition: background 0.5s linear;
+}
+.desc{
+	display: block;
+	width: 220px;
+	height: 80px;
+	text-align: left;
+	padding-top: 30px;
+}
+.locationcontent{
+	display: none;
+	width: 100%;
+	padding-top: 5%;
+	background-color: white;
+}
+.loc{
+	width: 35%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.address{
+	margin-bottom: 30px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 50px;
+}
+.addressBox1{
+	display: inline-block;
+	width: 220px;
+	height: 100%;
+	padding-right: 30px;
+}
+.addressBox2{
+	display: inline-block;
+	width: 220px;
+	height: 100%;
+	padding-left: 30px;
+}
+.store{
+	width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.boutique{
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.aboutcontent{
+	display: none;
+	width: 100%;
+	background-color: white;
+}
+.aboutText{
+	width: 60%;
+	padding-top: 5%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.aboutPic{
+    display: inline-block;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.imgAbout{
+	width: 300px;
+	height: 300px;
+	padding: 10px 30px 10px 30px;
+}
+.contactcontent{
+	display: none;
+	width: 100%;
+	background-color: white;
+}
+.contactBox{
+	width: 37%;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+	margin-bottom: 70px;
+}
+.contactText{
+	margin-bottom: 100px;
+}
+
+.putin::-webkit-input-placeholder {
+	font-family: 'Cutive Mono',serif ;
+	font-size: 14px;
+	color: rgba(204, 218, 224, 1);
+	display: block;
+}
+.putin, textarea{
+	font-family: 'Cutive Mono',serif ;
+	font-size: 14px;
+	color: black;
+	border: 2px solid rgba(204, 218, 224, 1);
+	opacity: 0.8;
+	padding: 10px;
+}
+.dugme{
+	font-family: 'Cutive Mono',serif ;
+	width: 60px;
+	height: 30px;
+	background-color: rgba(204, 218, 224, 1);
+	font-weight: bold;
+	margin-top: 20px;
+}
+.sitefooter{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.footerCenter{
+	padding-top: 20px;
+}
+.footerLinks,.footerMail,.footerOR{
+	padding: 20px 0;
+	font-family: 'Cutive Mono',serif ;
+}
+
+
+@media all and (max-width: 1350px) {
+    .row {
+        width: 73%;
+    }
+}
+@media all and (max-width: 1250px) {
+    .row {
+        width: 80%;
+    }
+}
+@media all and (max-width: 1200px) {
+    .row {
+        width: 85%;
+    }
+    .contactBox {
+        width: 50%;
+    }
+}
+@media all and (max-width: 1100px) {
+    .row {
+        width: 95%;
+    }
+    .loc {
+        width: 45%;
+    }
+}
+@media all and (max-width: 970px) {
+    .headerCenter {
+        width: 80%;
+    }
+    .headerName {
+        width: 10%;
+    }
+    .headerMenu {
+        width: 81%;
+    }
+    .product {
+        float: none;
+        width: 25%;
+        margin-right: 7%;
+        margin-left: 9%;
+        margin-bottom: 50px;
+        text-align: center;
+        display: inline-block;
+    }
+    .product:last-child {
+        margin-right: 7%;
+    }
+    .contactBox {
+        width: 65%;
+    }
+    .sitecontent {
+        height: 510px;
+    }
+}
+@media all and (max-width: 900px) {
+    .headerCenter {
+        width: 95%;
+    }
+    .aboutText {
+        width: 80%;
+    }
+    .contactBox {
+        width: 85%;
+    }
+    .product {
+        margin-left: 6%;
+    }
+    .product:last-child {
+        margin-right: 6%;
+    }
+    .sitecontent {
+        height: 490px;
+    }
+    .contentBox {
+        margin-top: 17%;
+    }
+}
+@media all and (max-width: 850px) {
+    .sitecontent {
+        height: 460px;
+    }
+    .headerName {
+        width: 15%;
+    }
+    .headerMenu {
+        width: 72%;
+    }
+    li {
+        margin-right: 30px;
+    }
+    .product {
+        margin-left: 4%;
+    }
+    .product:last-child {
+        margin-right: 4%;
+    }
+    .loc {
+        width: 68%;
+    }
+    .store {
+        width: 50%;
+    }
+}
+@media all and (max-width: 800px) {
+    .responsiveMenu {
+        display: block;
+    }
+    .headerCenter {
+        display: none;
+    }
+    .sitecontent {
+        margin-top: 50px;
+    }
+    .product {
+        margin-left: 3%;
+    }
+    .product:last-child {
+        margin-left: 3%;
+    }
+    .aboutText {
+        width: 90%;
+    }
+}
+@media all and (max-width: 750px) {
+    .sitecontent {
+        height: 420px;
+    }
+    .product {
+        width: 33%;
+        margin-left: 8%;
+    }
+    .product:last-child {
+        margin-left: 8%;
+    }
+}
+@media all and (max-width: 650px) {
+    .sitecontent {
+        height: 375px;
+    }
+    .product {
+        margin-left: 4%;
+    }
+    .product:last-child {
+        margin-right: 4%;
+    }
+    .store {
+        width: 100%;
+    }
+    .loc {
+        width: 70%;
+    }
+    .imgAbout {
+        width: 260px;
+        height: 250px;
+        padding: 10px 20px 10px 20px;
+    }
+    .contactBox {
+        width: 90%;
+    }
+    .contentBox {
+        width: 450px;
+        height: 220px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    .boxstyle {
+        width: 340px;
+    }
+}
+@media all and (max-width: 600px) {
+    .inMenuLogo {
+        width: 29%;
+    }
+    .product {
+        width: 78%;
+        margin-left: 0px;
+        text-align: center;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .product:last-child {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .imgJewelry1,
+    .imgJewelry2,
+    .imgJewelry3,
+    .imgJewelry4,
+    .imgJewelry5,
+    .imgJewelry6,
+    .imgJewelry7,
+    .imgJewelry8 {
+        display: inline-block;
+    }
+    .desc {
+        display: inline-block;
+    }
+    h3 {
+        margin-bottom: 20%;
+    }
+    .loc {
+        width: 80%;
+    }
+    .imgAbout {
+        width: 170px;
+        height: 185px;
+        padding: 10px 15px;
+    }
+}
+@media all and (max-width: 550px) {
+    .inMenuLogo {
+        width: 34%;
+    }
+    .sitecontent {
+        height: 280px;
+    }
+    .contentBox {
+        margin-top: 10%;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .contentBox {
+        width: 375px;
+        height: 195px;
+    }
+    .boxstyle {
+        width: 320px;
+        top: 45px;
+        left: 25px;
+    }
+    .putin,
+    textarea {
+        width: 90%;
+    }
+    .footerLinks img {
+        width: 85%;
+    }
+    p {
+        font-size: 16px;
+    }
+    .addressBox1,
+    .addressBox2 {
+        display: block;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 450px) {
+    .sitecontent {
+        height: 260px;
+    }
+    .contentBox {
+        width: 315px;
+        height: 170px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .boxstyle {
+        width: 270px;
+    }
+}
+@media all and (max-width: 400px) {
+    .aboutText {
+        width: 80%;
+    }
+}
+@media all and (max-width: 380px) {
+    .sitecontent {
+        height: 230px;
+    }
+    .contentBox {
+        width: 315px;
+        height: 140px;
+        margin-top: 15%;
+    }
+    .boxstyle {
+        width: 250px;
+        top: 34px;
+        left: 33px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .inMenuLogo {
+        width: 43%;
+    }
+}
+
+

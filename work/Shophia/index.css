@@ -1,0 +1,1834 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	width: 100%;
+	transition: background-color .5s;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.header{
+	width: 100%;
+	position: relative;
+	background-color: #F2F2F2;
+	padding: 10px 75px 30px 75px;
+}
+.responsiveWrapp{
+	display: none;
+}
+.respMenu ul li{
+	display: block;
+	text-decoration: none;
+}
+.respCategory{
+	margin-bottom: 15px;
+}
+.respCategory:hover{
+	background-color: #000000;
+}
+.respCategory:first-child:hover{
+	background-color: #111;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+	font-family: 'PT Sans', sans-serif;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+#main span{
+	font-size:30px;
+	cursor:pointer;
+	margin-left: 30px;
+}
+
+.smallParagraph{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: #393939;
+	display: inline-block;
+}
+.slusalica{
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+}
+.phone{
+	float: left;
+}
+.myMenu{
+	display: inline-block;
+	float: right;
+}
+.myItems{
+	list-style: none;
+	display: inline-block;
+	padding: 0px 30px;
+	border-right: 1px solid #000000;
+}
+.myItems a{
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+}
+.myItems a:hover{
+	font-weight: 700;
+}
+.myItems:first-child{
+    padding-left: 0px;
+}
+.myItems:last-child{
+	padding-right: 0px;
+	border-right: none !important;
+}
+.menuWrapper{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-color: transparent;
+}
+.logos{
+	width: 100%;
+	position: relative;
+	background-color: white;
+	padding: 15px 75px 10px 75px;
+	text-align: center;
+	position: relative;
+	z-index: 3;
+}
+.fixedWrapper{
+	position: fixed;
+	top: 0;
+	z-index: 5;
+}
+.fixedWrapper .triangleDown{
+	display: none;
+}
+.fixedWrapper .triangleDown .logos{
+	padding-bottom: 0px;
+}
+.triangleDown:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 470px;
+    margin-top: 0px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 80px solid white;
+    z-index: 3;
+	position: relative;
+	background-color: transparent;
+}
+				
+.navigation{
+	float: left;
+	display: inline-block;
+
+}
+.mainMenu{
+	display: inline-block;
+}
+.menuCategory{
+	list-style: none;
+	display: inline-block;
+	padding-right: 20px;
+}
+.menuCategory:last-child{
+	padding-right: 0px;
+}
+.menuCategory a{
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	font-family: 'IM Fell French Canon', serif;
+	font-style: italic;
+	font-size: 22px;
+	border-bottom: 1px solid transparent;
+	transition: all ease-in-out 0.5s;
+}
+.menuCategory a:hover{
+	color: darkgrey;
+	border-color: black;
+}
+
+.name{
+	display: inline-block;
+	margin-top: -12px;
+	margin-left: 15px;
+}
+.social{
+	float: left;
+}
+.socialWrapp{
+	float: right;
+}
+.social img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.social img:hover{
+	width: 33px;
+	margin-right: 12px;
+}
+.valuta{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+	padding: 10px 10px 10px 15px;
+	border: none;
+	background-color: #000000;
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	font-style: bold;
+	cursor: pointer;
+}
+.valuta:focus{ 
+	outline: none; 
+}
+.valuta:after{
+    content: "";
+    margin:0 0.5em;
+    display:inline-block;
+    border: 7px solid transparent;
+    border-top:8px solid white;
+    border-bottom:0 none;
+	margin-left: 15px;
+}
+.imageDiv{
+	position: relative;
+	background-image: url("images/imgmain.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding-top: 140px;
+	padding-bottom: 165px;
+	text-align: center;
+    z-index: 1;
+	top: -100px;
+}
+.borderLine{
+	border: 2px solid #ffffff;
+	padding: 5px 5px;
+	width: 280px;
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+	margin-bottom: 55px;
+}
+.title{
+	border: 1px solid #ffffff;
+	padding: 30px 0px;
+	position: relative;
+}
+h1{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 62px;
+	color: black;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+h2{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	color: white;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+h3{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 28px;
+	color: black;
+	letter-spacing: 2px;
+}
+.hrAdd:before{
+	content: "";
+	position: absolute;
+	border-top: 1px solid #ffffff;
+    width: 30px;
+	margin-top: 12px;
+	left: 55px;
+}
+.hrAdd:after{
+	content: "";
+	position: absolute;
+	border-top: 1px solid #ffffff;
+    width: 30px;
+	margin-top: 12px;
+	right: 60px;
+}
+
+.shopbtn{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px 25px;
+	border: none;
+	background-color: #F09D67;
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 26px;
+	font-style: bold;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+.shopbtn:focus{ 
+	outline: none; 
+}
+.shopbtn:hover {
+	background-color: #b35135;
+}
+.shopbtn:active {
+	position: relative;
+	border: 1px solid white;
+}
+.leftHr{
+	position: absolute;
+    width: 60px;
+    left: 25px;
+    margin-top: 22px;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #fffffff;
+}
+.rightHr{
+	position: absolute;
+    width: 60px;
+    right: 30px;
+    margin-top: -7px;
+	display: block;
+    height: 1px;
+    border-top: 1px solid #fffffff;
+}
+.arrowDivs{
+	position: relative;
+	width: 100%;
+	padding: 0px 75px 0px 75px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.firstArrow {
+	display: inline-block;
+	width: 30%;
+    margin-right: 2%;
+	padding: 25px 50px 15px 30px;
+	text-align: left;
+	vertical-align: middle;
+	background: #D9BE8F;
+
+}
+.secondArrow{
+	display: inline-block;
+	width: 30%;
+    margin-right: 2%;
+	padding: 25px 50px 15px 30px;
+	text-align: left;
+	vertical-align: middle;
+	background: #000000;
+}
+.thirdArrow{
+	display: inline-block;
+	width: 30%;
+	padding: 25px 50px 15px 30px;
+	text-align: left;
+	vertical-align: middle;
+	background: #D9BE8F;
+}
+.arrowImg {
+	display: inline-block;
+	margin-right: 20px;
+}
+h4{
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 25px;
+}
+.arrowSpan{
+	display: block;
+    font-size: 13px;
+    font-weight: 300;
+}
+.titleDiv{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding: 0px 75px 0px 75px;
+    margin-bottom: 65px;
+}
+.titleImg{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 60px;
+}
+h5{
+	font-family: 'IM Fell French Canon', serif;
+	font-style: italic;
+	font-size: 22px;
+	color: black;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+hr{
+	width: 350px;
+    vertical-align: middle;
+    display: inline-block;
+	border: 0;
+	border-top: 1px solid #D9BE8F;
+}
+.titleHrL{
+	position: absolute;
+    width: 350px;
+    left: 75px;
+    margin-top: 15px;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #D9BE8F;
+}
+.titleHrR{
+	position: absolute;
+    width: 350px;
+    right: 75px;
+    margin-top: -12px;
+	display: block;
+    height: 1px;
+	border-top: 1px solid #D9BE8F;
+}
+.collectionDiv{
+	position: relative;
+	width: 100%;
+	padding: 0px 75px;
+	margin-bottom: 100px;
+}
+.firstColumn{
+	float: left;
+	width: 28%;
+	margin: 1%;
+	display: inline-block;
+}
+.thirdColumn{
+	float: right;
+	width: 28%;
+	margin: 1%;
+	display: inline-block;
+}
+.secondColumn{
+	width: 38%;
+    margin: 1%;
+    display: inline-block;
+    background-image: url(images/img3.jpg);
+    background-size: cover;
+    background-attachment: initial;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 820px;
+	text-align: center;
+	padding-top: 30%;
+}
+.firstRowL{
+	background-image: url("images/img1.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-top: 80%;
+}
+
+.secondRowL{
+	background-image: url("images/img2.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 400px;
+    text-align: center;
+	padding-top: 80%;
+}
+.firstRowR{
+	background-image: url("images/img4.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-top: 80%;
+}
+.secondRowR{
+	background-image: url("images/img5.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	text-align: center;
+	padding-top: 80%;
+}
+
+.hoverUp{
+	padding: 10px 20px;
+	font-size: 15px;
+	display: none;
+}
+.box:hover .hoverUp{
+	display: inline-block;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.summerCollection{
+	position: relative;
+	width: 100%;
+	padding: 0px 75px;
+	margin-bottom: 100px;
+}
+.boxPic{
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 0px 0px 20px 20px;
+	perspective: 50%;
+}
+.boxPic:nth-child(4n){
+	padding-right: 20px;
+}
+.wrapBtn{
+	position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: -80px;
+    margin-left: 40px;
+	 -webkit-transform: rotateX(90deg); 
+    -moz-transform: rotateX(90deg);   
+    -ms-transform: rotateX(90deg);   
+    -o-transform: rotateX(90deg);   
+    transform: rotateX(90deg);
+}
+.chartBtn {
+	width: 200px;
+	height: 100px;
+	background: #000000;
+	-webkit-clip-path: polygon(28% 58%, 73% 58%, 100% 100%, 0% 100%);
+	clip-path: polygon(28% 58%, 73% 58%, 100% 100%, 0% 100%);
+	border: none;
+	top: 0;
+	left: 0;
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+    padding-top: 60px;
+    font-weight: 700;
+}
+.chartBtn:hover{
+	background-color: #F09D67;
+}
+.boxPic:hover .wrapBtn{
+	 -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(0deg);   
+    -ms-transform: rotateX(0deg);   
+    -o-transform: rotateX(0deg);   
+    transform: rotateX(0deg);
+	transition: all 0.5s ease; 
+}
+
+.numb1{
+	background-image: url("images/img6.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.numb2{
+	background-image: url("images/img7.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.numb3{
+	background-image: url("images/img8.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.numb4{
+	background-image: url("images/img9.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.numb5{
+	background-image: url("images/img10.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.numb6{
+	background-image: url("images/img11.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.numb7{
+	background-image: url("images/img12.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.numb8{
+	background-image: url("images/img13.jpg");
+	background-size: cover;
+	background-attachment: initial;
+	background-position: top center;
+	background-repeat: no-repeat;
+	min-height: 345px;
+	text-align: center;
+}
+.brandLogo{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 130px;
+
+}
+.brandLogo img{
+	max-width: 110px;
+	margin-left: 75px;
+	height: auto;
+	margin-bottom: 20px;
+}
+.brandLogo img:last-child{
+	margin-right: 75px;
+}
+.references{
+	width: 100%;
+	position: relative;
+	background-color: #D9BE8F;
+	padding: 40px 75px 50px 75px;
+	-webkit-clip-path: polygon(50% 10%, 100% -40%, 100% 100%, 0 100%, 0 -40%);
+	clip-path: (50% 10%, 100% -40%, 100% 100%, 0 100%, 0 -40%);
+}
+.leftRef{
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.rightRef{
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+.leftRef img{
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+.rightRef img{
+	display: inline-block;
+	margin-left: 30px;
+	vertical-align: middle;
+}
+.textBox{
+	width: 49%;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 100px;
+}
+.designerBox{
+	text-align: right;
+}
+.italicSpan{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	color: white;
+	font-style: italic;
+	margin-bottom: 50px;
+	display: inline-block;
+	line-height: 1.8;
+}
+.smallerh5{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+h6{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	color: grey;
+}
+.footer{
+	position: relative;
+	width: 100%;
+	padding: 70px 75px 0px 75px;
+	background-color: black;
+}
+.footerNav{
+	display: inline-block;
+	margin: 0px 80px 110px 0px;
+}
+.footerTitle{
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 15px;
+	display: block;
+    margin-bottom: 45px;
+}
+.footerItem{
+	line-height: 35px;
+}
+.footerItem a{
+	text-decoration: none;
+	color: #363636;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+.footerItem a:hover{
+	font-size: 16px;
+	color: #737373;
+	line-height: 36px;
+}
+.shop, .info, .service{
+	display: inline-block;
+    min-width: 20%;
+}
+.connect{
+	display: inline-block;
+    min-width: 35%;
+	margin-left: 20px;
+	padding-left: 30px;
+	vertical-align: top;
+}
+.connect img{
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+input::-webkit-input-placeholder {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #363636;
+	display: block;
+}
+input{
+	position: relative;
+    -webkit-appearance: textfield;
+    background-color: transparent;
+    -webkit-user-select: text;
+    cursor: auto;
+    padding: 20px 130px 20px 20px;
+	width: 365px;
+    border: 1px solid #363636;
+	outline:none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.subscribeBtn{
+	background-color: #363636;
+    border: none;
+    padding: 15px 20px;
+    position: absolute;
+    margin-left: -115px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+    color: white;
+    font-weight: 700;
+}
+.subscribeBtn:focus{ 
+	outline: none; 
+}
+.subscribeBtn:hover {
+	opacity: 0.5;
+}
+.subscribeBtn:active {
+	position: relative;
+	right: 1px;
+}
+.lastdiv{
+	position: relative;
+	padding: 70px 75px 100px 75px;
+	width: 100%;
+	text-align: left;
+	border-top: 1px solid #363636;
+}
+.smallSpan{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	color: #363636;
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+
+
+@media all and (max-width: 1310px) {
+    .subscribeBtn {
+        position: relative;
+        margin-top: 0px;
+    }
+    .firstArrow,
+    .secondArrow {
+        margin-right: 0%;
+        width: 30%;
+    }
+    .thirdArrow {
+        width: 30%
+    }
+    .arrowDivs {
+        padding: 0px 0px;
+    }
+    .triangleDown:after {
+        margin-left: 440px;
+    }
+    .logos {
+        padding: 15px 50px 10px 50px;
+    }
+    .header {
+        padding: 10px 50px 30px 50px;
+    }
+    .wrapBtn {
+        margin-left: 26px;
+    }
+    .boxPic:nth-child(4n) {
+        padding-right: 10px;
+    }
+}
+@media all and (max-width: 1250px) {
+    .triangleDown:after {
+        display: none;
+    }
+    .menuWrapper {
+        margin-bottom: 120px;
+    }
+    .logos {
+        padding: 15px 35px 10px 35px;
+    }
+    .wrapBtn {
+        margin-left: 20px;
+    }
+    h1 {
+        font-size: 58px;
+    }
+    .header {
+        padding: 10px 35px 30px 35px;
+    }
+    .menuCategory a {
+        font-size: 21px;
+    }
+    .name img {
+        width: 75%
+    }
+    .shopbtn {
+        font-size: 22px;
+    }
+    .brandLogo img {
+        max-width: 105px;
+        margin-left: 60px;
+    }
+    .references {
+        padding: 40px 55px 50px 55px;
+    }
+    .shop,
+    .info,
+    .service {
+        display: inline-block;
+        min-width: 33%;
+    }
+    .footer {
+        padding: 70px 0px 0px 0px;
+    }
+    .connect {
+        display: block;
+        min-width: 100%;
+        margin-left: 0px;
+        padding-left: 00px;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .footerMenus {
+        width: 100%;
+        padding-left: 200px;
+    }
+    .boxPic:nth-child(4n) {
+        padding-right: 0px;
+    }
+    .arrowImg {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 1180px) {
+    .social {
+        display: none;
+    }
+    .name {
+        display: none;
+    }
+    .menuWrapper {
+        margin-bottom: 145px;
+        background-color: white;
+        padding-bottom: 20px;
+    }
+    h1 {
+        font-size: 52px;
+    }
+    .shopbtn {
+        font-size: 20px;
+    }
+    .wrapBtn {
+        margin-left: 0px;
+        margin-left: 14px;
+    }
+    .chartBtn {
+        width: 90%;
+        font-size: 14px;
+    }
+    .brandLogo img {
+        max-width: 100px;
+        margin-left: 40px;
+    }
+    .titleHrL {
+        width: 300px;
+    }
+    .titleHrR {
+        width: 300px;
+    }
+}
+@media (max-width: 1150px) {
+    .wrapBtn {
+        margin-left: 9px;
+    }
+    @media all and (max-width: 1120px) {
+        .wrapBtn {
+            margin-left: 7px;
+        }
+        .leftRef img {
+            margin-right: 20px;
+        }
+        .textBox {
+            width: 40%;
+        }
+        .rightRef img {
+            margin-right: 20px;
+        }
+        .footerMenus {
+            padding-left: 170px;
+        }
+    }
+    @media (max-width: 1080px) {
+        .wrapBtn {
+            margin-left: 2px;
+        }
+        .titleHrL {
+            width: 260px;
+        }
+        .titleHrR {
+            width: 260px;
+        }
+    }
+    @media (max-width: 1030px) {
+        .wrapBtn {
+            margin-left: -3px;
+        }
+        .footerMenus {
+            padding-left: 150px;
+        }
+    }
+    @media (max-width: 1000px) {
+        h1 {
+            font-size: 49px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 26px;
+        }
+        h4 {
+            font-size: 23px;
+        }
+        .firstArrow,
+        .secondArrow,
+        .thirdArrow {
+            padding: 25px 30px 15px 30px;
+        }
+        .summerCollection {
+            text-align: center;
+        }
+        .boxPic {
+            float: none;
+            width: 35%;
+            display: inline-block;
+        }
+        .titleHrL {
+            width: 220px;
+        }
+        .titleHrR {
+            width: 220px;
+        }
+        .wrapBtn {
+            margin-left: 30px;
+        }
+        .leftRef img {
+            width: 35%;
+        }
+        .rightRef img {
+            width: 35%;
+        }
+        .italicSpan {
+            font-size: 16px;
+        }
+        .smallerh5 {
+            font-size: 20px;
+        }
+        h6 {
+            font-size: 12px;
+        }
+        .footerMenus {
+            padding-left: 130px;
+        }
+        .footerItem a {
+            font-size: 15px;
+        }
+    }
+    @media all and (max-width: 980px) {
+        .boxPic {
+            width: 40%;
+        }
+        .wrapBtn {
+            margin-left: 51px;
+        }
+        .brandLogo img {
+            margin-left: 35px;
+        }
+    }
+    @media all and (max-width: 950px) {
+        .wrapBtn {
+            margin-left: 40px;
+        }
+        .brandLogo img:last-child {
+            margin-right: 50px;
+        }
+        .footerMenus {
+            padding-left: 90px;
+        }
+        .titleHrL {
+            width: 190px;
+        }
+        .titleHrR {
+            width: 190px;
+        }
+    }
+    @media all and (max-width: 850px) {
+        h1 {
+            font-size: 47px;
+        }
+        h2 {
+            font-size: 21px;
+        }
+        .shopbtn {
+            font-size: 18px;
+        }
+        .wrapBtn {
+            margin-left: 24px;
+        }
+        .responsiveWrapp {
+            display: block;
+            position: fixed;
+            z-index: 10;
+            background-color: #E2E2E2;
+            width: 100%;
+        }
+        .header {
+            display: none;
+        }
+        .menuWrapper {
+            display: none;
+        }
+        .imageDiv {
+            top: 70px;
+            margin-bottom: 180px;
+        }
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+        .titleHrL {
+            width: 160px;
+        }
+        .titleHrR {
+            width: 160px;
+        }
+        .shop,
+        .info,
+        .service {
+            min-width: 32%;
+        }
+        .brandLogo img:last-child {
+            margin-right: 10px;
+        }
+        .brandLogo img {
+            margin-left: 28px;
+            width: 95px;
+        }
+        .brandLogo {
+            margin-bottom: 110px;
+        }
+        .firstArrow,
+        .secondArrow,
+        .thirdArrow {
+            width: 33%;
+        }
+        .collectionDiv {
+            padding: 0px 35px;
+        }
+    }
+    @media all and (max-width: 820px) h1 {
+        font-size: 43px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .firstArrow,
+    .secondArrow,
+    .thirdArrow {
+        width: 31%;
+    }
+    .titleHrL {
+        width: 130px;
+    }
+    .titleHrR {
+        width: 130px;
+    }
+    .boxPic {
+        width: 45%;
+    }
+    .wrapBtn {
+        margin-left: 25px;
+    }
+    .brandLogo img {
+        margin-left: 22px;
+        width: 85px;
+    }
+    .references {
+        -webkit-clip-path: none;
+        padding: 40px 20px 50px 20px;
+    }
+}
+@media all and (max-width: 780px) {
+    h1 {
+        font-size: 42px;
+    }
+    .textBox {
+        width: 47%;
+    }
+    .titleHrL {
+        width: 110px;
+    }
+    .titleHrR {
+        width: 110px;
+    }
+}
+@media all and (max-width: 750px) {
+    .wrapBtn {
+        margin-left: 17px;
+    }
+    .footerMenus {
+        padding-left: 50px;
+    }
+}
+@media all and (max-width: 720px) {
+    .wrapBtn {
+        margin-left: 11px;
+    }
+}
+@media all and (max-width: 700px) {
+    .wrapBtn {
+        margin-left: 3px;
+    }
+    .firstArrow,
+    .secondArrow,
+    .thirdArrow {
+        width: 32%;
+    }
+    .brandLogo img {
+        margin-left: 45px;
+        width: 90px;
+    }
+    .brandLogo {
+        margin-bottom: 75px;
+    }
+    .titleHrL {
+        width: 90px;
+    }
+    .titleHrR {
+        width: 90px;
+    }
+    .footerMenus {
+        padding-left: 40px;
+    }
+    .shop,
+    .info,
+    .service {
+        min-width: 28%;
+    }
+}
+@media all and (max-width: 680px) {
+    .firstArrow,
+    .secondArrow,
+    .thirdArrow {
+        width: 70%;
+    }
+    .arrowImg {
+        display: inline-block;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    .titleImg {
+        margin: 0px 25px;
+    }
+    .summerCollection {
+        padding: 0px 50px;
+    }
+    .wrapBtn {
+        margin-left: 8px;
+    }
+    .leftRef,
+    .rightRef {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .leftRef img {
+        width: 38%;
+        margin-right: 50px;
+    }
+    .textBox {
+        width: 50%;
+    }
+    .rightRef img {
+        width: 35%;
+        margin-left: 50px;
+        text-align: left;
+    }
+    .footerNav {
+        margin: 0px 60px 110px 0px;
+    }
+    .italicSpan {
+        font-size: 18px;
+    }
+    .smallerh5 {
+        font-size: 21px;
+    }
+}
+@media all and (max-width: 620px) {
+    .wrapBtn {
+        margin-left: -4px;
+    }
+    .footerItem a {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 600px) {
+    #main {
+        padding: 10px;
+    }
+    .imageDiv {
+        top: 60px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        margin-bottom: 140px;
+    }
+    .title {
+        padding: 20px 0px;
+    }
+    h1 {
+        font-size: 39px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .shopbtn {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .collectionDiv {
+        text-align: center;
+    }
+    .firstColumn {
+        float: none;
+        width: 100%;
+        display: inline-block;
+        margin: 0px;
+    }
+    .firstRowL,
+    .secondRowL {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+        min-height: 350px;
+        padding-top: 35%;
+    }
+    .secondColumn {
+        width: 49%;
+        float: left;
+        margin: 0px 0px;
+        vertical-align: top;
+        min-height: 720px;
+        padding-top: 55%;
+    }
+    .thirdColumn {
+        width: 49%;
+        margin: 0px;
+    }
+    .firstRowR,
+    .secondRowR {
+        min-height: 350px;
+        padding-top: 60%;
+    }
+    .boxPic {
+        width: 48%;
+    }
+    .wrapBtn {
+        margin-left: 3px;
+    }
+    .footerMenus {
+        padding-left: 110px;
+    }
+    .footerItem a {
+        font-size: 16px;
+    }
+    .connect img {
+        width: 8%;
+    }
+    .titleDiv {
+        padding: 0px 35px 0px 35px;
+    }
+    .titleImg {
+        margin: 0px 16px;
+    }
+    .titleHrL {
+        width: 80px;
+        left: 30px;
+    }
+    .titleHrR {
+        width: 80px;
+        right: 30px;
+    }
+    .textBox {
+        padding-top: 40px;
+    }
+    .leftRef {
+        margin-bottom: 50px;
+    }
+    .leftHr {
+        margin-top: 21px;
+    }
+    .rightHr {
+        margin-top: -6px;
+    }
+}
+@media all and (max-width: 580px) {
+    .wrapBtn {
+        margin-left: -6px;
+    }
+    .titleDiv {
+        padding: 0px 10px 0px 10px;
+    }
+    .rightRef img {
+        width: 33%;
+    }
+    .leftRef img {
+        width: 33%;
+    }
+}
+@media all and (max-width: 550px) {
+    .summerCollection {
+        padding: 0px 25px;
+    }
+    .boxPic {
+        width: 47%;
+        margin-right: 10px;
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+    .boxPic:nth-child(even) {
+        margin-right: 0px;
+    }
+    .wrapBtn {
+        bottom: -100px;
+        margin-left: 8px;
+    }
+    .footerMenus {
+        padding-left: 75px;
+    }
+}
+@media all and (max-width: 520px) {
+    .wrapBtn {
+        margin-left: 1px;
+    }
+}
+@media all and (max-width: 500px) {
+    .imageDiv {
+        padding-bottom: 30px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .rightHr {
+        margin-top: -3px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h3 {
+        font-size: 21px;
+    }
+    .shopbtn {
+        font-size: 15px;
+        padding: 12px 18px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .wrapBtn {
+        margin-left: -4px;
+    }
+    .italicSpan {
+        font-size: 16px;
+    }
+    .textBox {
+        width: 46%;
+    }
+    .footerMenus {
+        padding-left: 50px;
+    }
+    .firstRowL,
+    .secondRowL {
+        min-height: 300px;
+    }
+    .secondColumn {
+        min-height: 620px;
+    }
+    .firstRowR,
+    .secondRowR {
+        min-height: 300px;
+    }
+}
+@media all and (max-width: 480px) {
+    #main {
+        padding: 5px;
+    }
+    .imageDiv {
+        top: 50px;
+    }
+    .wrapBtn {
+        margin-left: -4px;
+    }
+    .brandLogo img:nth-child(4n) {
+        margin-left: 0px;
+    }
+    .brandLogo img:first-child {
+        margin-left: 0px;
+    }
+    .textBox {
+        padding-top: 0px;
+    }
+    .footerMenus {
+        padding-left: 40px;
+    }
+    .footerNav {
+        margin: 0px 47px 110px 0px;
+    }
+    input {
+        width: 350px;
+    }
+}
+@media all and (max-width: 460px) {
+    .wrapBtn {
+        margin-left: -10px;
+    }
+}
+@media all and (max-width: 450px) {
+    .chartBtn {
+        width: 80%;
+        font-size: 13px;
+    }
+    .wrapBtn {
+        margin-left: -14px;
+    }
+    .footerNav {
+        margin: 0px 42px 110px 0px;
+    }
+    input {
+        width: 330px;
+    }
+    .firstArrow,
+    .secondArrow,
+    .thirdArrow {
+        width: 80%;
+    }
+    .firstRowL,
+    .secondRowL {
+        min-height: 270px;
+    }
+    .secondColumn {
+        min-height: 560px;
+    }
+    .firstRowR,
+    .secondRowR {
+        min-height: 270px;
+    }
+}
+@media all and (max-width: 430px) {
+    .imageDiv {
+        padding-top: 50px;
+    }
+    .firstArrow,
+    .secondArrow,
+    .thirdArrow {
+        width: 85%;
+    }
+    .titleImg {
+        display: none;
+    }
+    .wrapBtn {
+        margin-left: -18px;
+    }
+    .footerMenus {
+        padding-left: 35px;
+    }
+    .footerItem a {
+        font-size: 15px;
+    }
+    input {
+        width: 320px;
+    }
+    .connect img {
+        width: 9%;
+    }
+    #main span {
+        margin-left: 25px;
+    }
+}
+@media all and (max-width: 410px) {
+    .titleHrL {
+        width: 60px;
+        left: 15px;
+    }
+    .titleHrR {
+        width: 60px;
+        right: 15px;
+    }
+    .chartBtn {
+        width: 75%;
+    }
+    .wrapBtn {
+        margin-left: -24px;
+    }
+    .brandLogo img {
+        margin-left: 35px;
+        width: 85px;
+    }
+    .leftRef img {
+        margin-right: 30px;
+    }
+    .rightRef img {
+        margin-left: 30px;
+    }
+    .footerMenus {
+        padding-left: 85px;
+    }
+    .firstRowL,
+    .secondRowL {
+        min-height: 250px;
+    }
+    .secondColumn {
+        min-height: 520px;
+    }
+    .firstRowR,
+    .secondRowR {
+        min-height: 250px;
+    }
+}
+@media all and (max-width: 390px) {
+    #main span {
+        margin-left: 20px;
+    }
+    .sidenav {
+        width: 185px;
+    }
+    .borderLine {
+        width: 260px;
+        margin-bottom: 30px;
+    }
+    .title {
+        padding: 13px 0px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .shopbtn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .imageDiv {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+    .firstArrow,
+    .secondArrow,
+    .thirdArrow {
+        width: 100%;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .arrowImg {
+        width: 12%;
+    }
+    .collectionDiv {
+        padding: 0px 15px;
+    }
+    .firstRowL,
+    .secondRowL {
+        min-height: 200px;
+    }
+    .secondColumn {
+        min-height: 420px;
+    }
+    .firstRowR,
+    .secondRowR {
+        min-height: 200px;
+    }
+    .boxPic {
+        width: 80%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .chartBtn {
+        width: 90%;
+        font-size: 14px;
+    }
+    .wrapBtn {
+        margin-left: 12px;
+    }
+    .brandLogo img {
+        margin-left: 20px;
+    }
+    .leftRef img {
+        width: 41%;
+        margin-right: 20px;
+    }
+    .rightRef img {
+        width: 38%;
+        margin-left: 20px;
+    }
+    .smallerh5 {
+        font-size: 19px;
+    }
+    .italicSpan {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .subscribeBtn {
+        display: block;
+        margin-left: 0px;
+        padding: 12px 16px;
+    }
+    .connect img {
+        width: 11%;
+    }
+    .connect {
+        padding: 0px 30px 80px 30px;
+    }
+}
+@media all and (max-width: 360px) {
+    #main span {
+        margin-left: 15px;
+    }
+    .borderLine {
+        width: 215px;
+    }
+    .hrAdd:before {
+        left: 35px;
+    }
+    .hrAdd:after {
+        right: 35px;
+    }
+    .leftHr {
+        left: 5px;
+    }
+    .rightHr {
+        margin-top: -1px;
+        right: 5px;
+    }
+    h1 {
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+    .titleHrL {
+        width: 55px;
+        left: 10px;
+    }
+    .titleHrR {
+        width: 55px;
+        right: 10px;
+    }
+    .wrapBtn {
+        margin-left: 9px;
+    }
+}
+@media all and (max-width: 340px) {
+    #main span {
+        margin-left: 10px;
+    }
+    .firstRowL,
+    .secondRowL {
+        min-height: 180px;
+    }
+    .secondColumn {
+        min-height: 380px;
+    }
+    .firstRowR,
+    .secondRowR {
+        min-height: 180px;
+    }
+    .wrapBtn {
+        margin-left: 2px;
+    }
+    .brandLogo img {
+        margin-left: 12px;
+    }
+    .textBox {
+        width: 46%;
+    }
+    .smallerh5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .rightRef img {
+        margin-right: 0px;
+    }
+    .footerMenus {
+        padding-left: 75px;
+    }
+    .connect {
+        padding: 0px 20px 80px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
