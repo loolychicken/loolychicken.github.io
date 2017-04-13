@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    width: 100%;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.wrapper {
+    width: 100%;
+    position: relative;
+    background-image: url("images/5.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 80px 0px;
+}
+.mainPage {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #F3F7E8;
+    box-shadow: -15px 15px 20px 5px rgba(136, 136, 136, 0.7);
+}
+.header {
+    width: 100%;
+    position: relative;
+    background-color: #897F73;
+    padding: 30px 0px;
+    box-shadow: 0px -5px 20px rgba(136, 136, 136, 0.7);
+}
+.left {
+    width: 30%;
+    float: left;
+    background-color: #D2C6C7;
+    padding: 152px 30px;
+    box-shadow: 5px 5px 20px 2px rgba(136, 136, 136, 0.7);
+}
+.ls {
+    padding: 176px 30px;
+}
+.right {
+    width: 70%;
+    float: right;
+    background-color: transparent;
+    padding: 80px 80px;
+}
+.imgLeft {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.titleRight {
+    width: 70%;
+    float: right;
+    text-align: center;
+}
+.myImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url("images/y.png");
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+	transition: all 0.5s ease-in;
+}
+.myImage:hover{
+	 background-image: url("images/ik.jpg");
+	 background-position-y: top;
+}
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+h1 {
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #3C3C3C;
+}
+.jd {
+    font-family: 'Poiret One', cursive;
+    font-size: 27px;
+    transition: all 0.5 ease-in-out;
+}
+.jd:hover {
+    color: #F3F7E8;
+}
+h2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.info {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 35px;
+}
+p {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+.years {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.pBox {
+    margin-bottom: 20px;
+}
+.box:first-child {
+    margin-bottom: 120px;
+}
+.lbs:first-child {
+    margin-bottom: 140px;
+}
+.boxAbout {
+    margin-bottom: 80px;
+}
+.boxAbout:last-child {
+    margin-bottom: 0px;
+}
+hr {
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #888888;
+}
+.chr {
+    width: 80px;
+}
+.phr {
+    width: 60px;
+}
+.shr {
+    width: 220px;
+}
+.whr {
+    width: 55px;
+}
+.ehr {
+    width: 95px;
+}
+.longhr {
+    width: 150px;
+}
+.normalhr {
+    width: 140px;
+}
+.khr {
+    width: 75px;
+}
+.buttonStyle {
+    width: 100px;
+    border: 1px solid #888888;
+    padding: 10px 15px;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(171, 143, 154, 0.7);
+    text-align: center;
+    display: block;
+    line-height: 25px;
+}
+.buttonStyle:hover {
+    box-shadow: -5px 5px 10px 5px rgba(136, 136, 136, 0.7);
+    border: 1px solid rgba(171, 143, 154, 0.3);
+}
+.side {
+    position: fixed;
+    margin-left: 35px;
+    margin-top: 120px;
+}
+.info img {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.langLinks {
+    position: absolute;
+    top: 20px;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ll {
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+.mailLink {
+    text-decoration: none;
+    color: #3C3C3C;
+}
+.mailLink:hover {
+    font-weight: 700;
+}
+@media all and (max-width: 1350px) {
+    .lbs:first-child {
+        margin-bottom: 181px;
+    }
+}
+@media all and (max-width: 1335px) {
+    .mainPage {
+        width: 72%;
+    }
+}
+@media all and (max-width: 1300px) {
+    .ls,
+    .le {
+        padding: 187px 25px;
+    }
+}
+@media all and (max-width: 1250px) {
+    .left,
+    .imgLeft {
+        width: 32%;
+    }
+    .titleRight {
+        width: 68%;
+    }
+    .right {
+        width: 68%;
+        padding: 80px 70px;
+    }
+    .myImage {
+        width: 190px;
+        height: 190px;
+    }
+    .side {
+        margin-left: 25px;
+    }
+}
+@media all and (max-width: 1205px) {
+    .side {
+        margin-left: 15px;
+    }
+    .mainPage {
+        width: 74%;
+    }
+}
+@media all and (max-width: 1175px) {
+    .ls {
+        padding: 197px 25px;
+    }
+}
+@media all and (max-width: 1145px) {
+    .mainPage {
+        width: 75%;
+    }
+    .left,
+    .imgLeft {
+        width: 33%;
+    }
+    .titleRight {
+        width: 67%;
+    }
+    .right {
+        width: 67%;
+        padding: 80px 60px;
+    }
+}
+@media all and (max-width: 1100px) {
+    .side {
+        margin-left: 10px;
+        z-index: 99;
+    }
+    .buttonStyle {
+        width: 90px;
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+    .myImage {
+        width: 185px;
+        height: 185px;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    .right {
+        width: 63%;
+        padding: 80px 45px;
+    }
+    .titleRight {
+        width: 63%;
+    }
+    .left,
+    .imgLeft {
+        width: 37%;
+    }
+    .ls {
+        padding: 250px 25px;
+    }
+    .le {
+        padding: 207px 25px;
+    }
+}
+@media all and (max-width: 1090px) {
+    .le {
+        padding: 228px 25px;
+    }
+}
+@media all and (max-width: 1050px) {
+    .le {
+        padding: 231px 25px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .side {
+        margin-left: 35px;
+        margin-top: -75px;
+    }
+    .buttonStyle {
+        width: 130px;
+    }
+    .mainPage {
+        width: 85%;
+    }
+    .left,
+    .imgLeft {
+        width: 35%;
+    }
+    .right {
+        width: 65%;
+        padding: 80px 50px;
+    }
+    .titleRight {
+        width: 65%;
+    }
+    .ls {
+        padding: 215px 25px;
+    }
+    .le {
+        padding: 189px 25px;
+    }
+}
+@media all and (max-width: 930px) {
+    .le {
+        padding: 203px 25px;
+    }
+}
+@media all and (max-width: 930px) {
+    .mainPage {
+        width: 86%;
+    }
+    .left,
+    .imgLeft {
+        width: 36%;
+    }
+    .right {
+        width: 64%;
+        padding: 80px 50px;
+    }
+    .titleRight {
+        width: 64%;
+    }
+    .ls {
+        padding: 218px 25px;
+    }
+}
+@media all and (max-width: 915px) {
+    .mainPage {
+        width: 87%;
+    }
+    .ls {
+        padding: 203px 25px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .myImage {
+        width: 180px;
+        height: 180px;
+    }
+    .jd {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .info {
+        font-size: 17px;
+    }
+}
+@media all and (max-width: 895px) {
+    .ls {
+        padding: 211px 25px;
+    }
+}
+@media all and (max-width: 880px) {
+    .mainPage {
+        width: 88%;
+    }
+    .right {
+        padding: 70px 50px;
+    }
+    .ll {
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 850px) {
+    .mainPage {
+        width: 90%;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    .years {
+        font-size: 18px;
+    }
+    .info,
+    p {
+        font-size: 16px;
+    }
+    .ls {
+        padding: 187px 25px;
+    }
+    .le {
+        padding: 179px 25px;
+    }
+}
+@media all and (max-width: 830px) {
+    .le {
+        padding: 180px 25px;
+    }
+}
+@media all and (max-width: 800px) {
+    .mainPage {
+        width: 93%;
+    }
+    .ls {
+        padding: 189px 25px;
+    }
+    .info img {
+        display: block;
+    }
+    .info {
+        display: block;
+    }
+}
+@media all and (max-width: 750px) {
+    .myImage {
+        width: 165px;
+        height: 165px;
+    }
+    h1 {
+        font-size: 39px;
+    }
+    .jd {
+        font-size: 25px;
+    }
+    .ls {
+        padding: 225px 18px;
+    }
+    .le {
+        padding: 147px 25px;
+    }
+}
+@media all and (max-width: 720px) {
+    .mainPage {
+        width: 95%;
+    }
+    .le {
+        padding: 167px 25px;
+    }
+}
+@media all and (max-width: 700px) {
+    .mainPage {
+        width: 100%;
+    }
+}
+@media all and (max-width: 670px) {
+    .myImage {
+        width: 160px;
+        height: 160px;
+    }
+    h1 {
+        font-size: 37px;
+    }
+    .jd {
+        font-size: 24px;
+    }
+    .years {
+        font-size: 17px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .ls {
+        padding: 191px 18px;
+    }
+    .right {
+        padding: 70px 40px;
+    }
+}
+@media all and (max-width: 630px) {
+    .ls,
+    .le {
+        padding: 80px 0px;
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .info img,
+    .info {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: justify;
+    }
+    .box {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .lbs:first-child {
+        margin-bottom: 65px;
+    }
+    .box:last-child {
+        width: 80%;
+    }
+    .right {
+        padding: 80px 40px;
+        float: none;
+        width: 100%;
+    }
+    .side {
+        right: 0;
+        bottom: 30px;
+    }
+}
+@media all and (max-width: 600px) {
+    .imgLeft {
+        width: 33%;
+    }
+    .titleRight {
+        width: 67%;
+    }
+    .myImage {
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .jd {
+        font-size: 23px;
+    }
+}
+@media all and (max-width: 550px) {
+    .imgLeft,
+    .titleRight {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .header {
+        text-align: center;
+    }
+    .title {
+        margin-top: 30px;
+    }
+}
