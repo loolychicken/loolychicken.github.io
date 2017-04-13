@@ -1,0 +1,1902 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	width: 100%;
+	font-family: 'Oswald', sans-serif;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.wrapper{
+	width: 100%;
+	padding: 0px 170px;
+	margin: 0 auto;
+	text-align: center;
+}
+.backgroundImg{
+	width: 100%;
+	background-image: url(images/bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 120px 0px;
+}
+.tiles{
+	width: 100%;
+	margin-bottom: 100px;
+}
+.firstRow, .secondRow, .thirdRow{
+	width: 100%;
+	position: relative;
+	min-height: 200px;
+}
+.name{
+	width: 50%;
+	text-align: left;
+	padding: 50px 0px 40px 0px;
+	float: left;
+}
+.box{
+	width: 16.6%;
+	min-height: 200px;
+	float: left;
+}
+.empty{
+	background-color: transparent;
+}
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 28px;
+}
+h1 span{
+	color: #21D9B5;
+}
+.subtitle{
+	font-size: 20px;
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.one{
+	background-image: url(images/f1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	cursor: pointer;
+}
+.one:hover{
+	opacity: 0.4;
+}
+.three:hover{
+	opacity: 0.4;
+}
+.four:hover{
+	opacity: 0.4;
+}
+.seven:hover{
+	opacity: 0.4;
+}
+.ten:hover{
+	opacity: 0.4;
+}
+.two{
+	background-image: url(images/f2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.three{
+	background-image: url(images/f3.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.four{
+	background-image: url(images/f4.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    cursor: pointer;
+}
+.five{
+	background-image: url(images/f5.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.six{
+	background-image: url(images/f6.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.seven{
+	background-image: url(images/f7.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    cursor: pointer;
+}
+.eight{
+	background-image: url(images/f8.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.nine{
+	background-image: url(images/f9.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ten{
+	background-image: url(images/f10.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    cursor: pointer;
+}
+.eleven{
+	background-image: url(images/f11.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#Trigger{
+	border: none;
+	background-color: transparent;
+}
+#Trigger:focus{
+	outline: none;
+}
+#Actual{
+	width: 100%;
+	padding: 60px 0px 40px 0px;
+	background-color: #1BBC9B;
+	position: relative;
+}
+.slideup, .slidedown {
+    max-height: 0;            
+    overflow-y: hidden;
+    -webkit-transition: max-height 0.8s ease-in-out;
+    -moz-transition: max-height 0.8s ease-in-out;
+    -o-transition: max-height 0.8s ease-in-out;
+    transition: max-height 0.8s ease-in-out;
+}
+.slidedown {            
+   max-height: 137px ;                    
+}    
+h4{
+	float: left;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	color: #ffffff;
+}
+.navigation{
+	float: right;
+}
+.navigation li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+.navigation li:last-child{
+	margin-right: 0px;
+}
+.navigation li a{
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.navigation li a:active{
+	font-weight: 700;
+}
+.aboutUs{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #FFFFFF;
+	text-align: center;
+	position: relative;
+}
+.title{
+	width: 100%;
+	margin-bottom: 80px;
+}
+.border{
+	margin: 0 auto;
+	position: relative;
+	width: 20%;
+	border: none;
+	border-bottom: 1px solid lightgrey;
+}
+h2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #1BBC9B;
+	font-weight: 400;
+}
+.green{
+	margin: 0 auto;
+    width: 25%;
+    border: none;
+    border-bottom: 2px solid #1BBC9B;
+    margin-top: 15px;
+}
+.wideGreen{
+	width: 35%;
+}
+.picComp{
+	float: left;
+	width: 65%;
+}
+.picComp img{
+	width: 85%;
+	height: auto;
+	margin-bottom: 70px;
+}
+.skillBars{
+	float: right;
+	width: 35%;
+	text-align: left;
+	padding-left: 50px;
+}
+p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #7D7D7D;
+	line-height: 26px;
+}
+
+.skillbar {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+	background: #eee;
+	height: 15px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-ms-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+	-ms-transition-property: width, background-color;
+	-o-transition-property: width, background-color;
+	transition-property: width, background-color;
+}
+.skillbar-bar {
+	height: 15px;
+	width: 0px;
+	background: #1BBC9B;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #7D7D7D;
+	margin-bottom: 20px;
+}
+.skillBars p{
+	margin-bottom: 10px;
+}
+.bar{
+	margin-top: 10px;
+}
+.skillButton{
+	background-color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #6AD4BE;
+    border: 2px solid #1BBC9B;
+    border-radius: 40px;
+    margin-top: 80px;
+    padding: 15px 30px;
+	cursor: pointer;
+}
+.skillButton:focus{
+	outline: none;
+}
+.skillButton:active{
+	font-size: 19px;
+	box-shadow: 10px 10px 5px #eee;
+}
+.ourTeam{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-image: url(images/bg2.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0px 80px 0px;
+}
+.whiteBorder{
+	border-bottom: 1px solid #ffffff;
+	width: 22%;
+}
+.whiteHr{
+	border-bottom: 2px solid #ffffff;
+}
+.whiteH2{
+	color: #ffffff;
+}
+.whiteP{
+	color: white;
+	opacity: 0.8;
+    font-size: 18px;
+	margin-bottom: 50px;
+}
+.memberWrapper{
+	width: 100%;
+	position: relative;
+}
+.member{
+	width: 25%;
+	float: left;
+	padding: 0px 20px;
+	text-align: center;
+	display: block;
+}
+
+.member img{
+	width: 212px;
+	height: auto;
+	margin-bottom: 20px;
+	transition: all 0.5s ease-in-out 0s;
+}
+.member img:hover{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+h5{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.job{
+	
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	letter-spacing: 3px;
+	color: #ffffff;
+	font-weight: 300;
+}
+.facts{
+	width: 100%;
+	padding: 100px 0px 50px 0px;
+	background-color: #1BBC9B;
+	text-align: center;
+	position: relative;
+}
+.wide{
+	width: 40%;
+}
+.smallMargine{
+	margin-bottom: 50px;
+}
+.numberBox{
+	width: 25%;
+	float: left;
+	padding: 0px 40px;
+	text-align: center;
+	display: block;
+	margin-bottom: 30px;
+}
+.bigH5{
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+.ourServices{
+	width: 100%;
+	padding: 70px 0px 80px 0px;
+	background-color: #eeeeee;
+	text-align: center;
+	position: relative;
+}
+.serviceBox{
+	width: 45%;
+	float: left;
+	text-align: left;
+	margin-bottom: 100px;
+}
+.serviceBox:nth-child(2n){
+	margin-right: 5%;
+}
+.serviceBox img{
+	float: left;
+	width: 20%;
+}
+.textBox{
+	float: right;
+	width: 80%;
+	padding-left: 20px;
+    margin-top: 15px;
+}
+h6{
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: #1ABB9C;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+.smallSpan{
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #585858;
+	font-weight: 300;
+}
+.cv{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #FFFFFF;
+	text-align: center;
+	position: relative;
+}
+.bottomMargine{
+	margin-bottom: 100px;
+	display: inline-block;
+}
+.imgBoxWrapper{
+	width: 100%;
+	position: relative;
+}
+.imgBox{
+	width: 23%;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+.imgBox:nth-child(8){
+	margin-right: 0px;
+}
+.imgBox:last-child{
+	margin-right: 0px;
+}
+.imgBox:hover{
+	 -webkit-filter: drop-shadow(10px 7px 1px lightgrey)
+}
+.imgBox:hover .linkMe{
+	opacity: 1;
+}
+.linkMe{
+	opacity: 0;
+	border-radius: 25px;
+	border: 2px solid  #ffffff;
+	color:  #ffffff;
+	font-size: 16px;
+	padding: 10px 15px;
+	background-color: #21D9B5;
+}
+.linkMe:focus{
+	outline: none;
+}
+.picOne{
+	position: relative;
+	width: 23%;
+	padding: 125px 0px;
+	text-align: center;
+	background-image: url(images/r1.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picTwo{
+	position: relative;
+	width: 23%;
+	padding: 125px 0px;
+	text-align: center;
+	background-image: url(images/r2.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picThree{
+	position: relative;
+	width: 23%;
+	padding: 125px 0px;
+	text-align: center;
+	background-image: url(images/r3.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picFour{
+	position: relative;
+	width: 23%;
+	padding: 125px 0px;
+	text-align: center;
+	background-image: url(images/r4.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picFive{
+	position: relative;
+	width: 23%;
+	padding: 150px 0px 100px 0px;
+	text-align: center;
+	background-image: url(images/r5.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picSix{
+	position: relative;
+	width: 23%;
+	padding: 125px 0px;
+	text-align: center;
+	background-image: url(images/r6.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picSeven{
+	position: relative;
+	width: 23%;
+	padding: 125px 0px;
+	text-align: center;
+	background-image: url(images/r7.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picEight{
+	position: relative;
+	width: 23%;
+	padding: 125px 0px;
+	text-align: center;
+	background-image: url(images/r8.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.clients{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-image: url(images/bg3.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0px 40px 0px;
+}
+.brandBar{
+	width: 100%;
+	position: relative;
+}
+.brandBox{
+	display: inline-block;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+.brandBox:last-child{
+	margin-right: 0px;
+}
+.brandBox img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 65px;
+}
+.bigSpan{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: 300;
+	display: inline-block;
+	vertical-align: middle;
+}
+.clientsSlide{
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.goLeft{
+	float: left;
+    margin-right: 15%;
+    margin-top: 60px;
+}
+a {
+	display: inline-block;
+}
+.goRight{
+	right: 0px;
+    margin-top: 60px;
+	position: absolute;
+}
+.clientImg{
+	width: 21%;
+	float: left;
+	margin-right: 20px;
+}
+.clientText {
+    float: left;
+    text-align: left;
+    width: 39%;
+    margin-right: 15%;
+    padding-top: 20px;
+}
+.h5Bottom{
+	margin-bottom: 30px;
+}
+.location{
+	width: 100%;
+	padding-right: 180px;
+	background-image: url(images/map.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.addressBar{
+	float: right;
+	padding: 100px 100px;
+	background-color: #34495E;
+	text-align: center;
+	margin-bottom: 300px;
+}
+.whiteh6{
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.margH6{
+	margin-bottom: 50px;
+}
+.social{
+	margin-top: 50px;
+}
+.social img{
+	width: 50px;
+	margin-right: 5px;
+}
+.contactUs{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #FFFFFF;
+	text-align: center;
+	position: relative;
+}
+.details{
+	width: 100%;
+	position: relative;
+}
+.inputDetails{
+	width: 50%;
+	float: left;
+}
+.msgDetails{
+	width: 50%;
+	float: right;
+}
+.putin, textarea::-webkit-input-placeholder {
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	color: grey;
+	display: block;
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.putin, textarea{
+	font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: black;
+	margin-bottom: 25px;
+	width: 95%;
+    border: none;
+    opacity: 0.8;
+    background-color: #eeeeee;
+    padding: 17px;
+    border-radius: 25px;
+}
+.putin, textarea:focus{
+	outline: none;
+}
+footer{
+	width: 100%;
+	padding: 30px 0px;
+	background-color: #eeeeee;
+}
+.greyh4{
+	color: grey;
+	font-weight: 700;
+	float: left;
+	font-size: 20px;
+}
+.greyh4 span{
+	color: #21D9B5;
+	font-weight: 700;
+}
+footer p{
+	float: right;
+}
+p span{
+	color: #21D9B5;
+}
+
+@media all and (max-width: 1340px){
+	
+	.wrapper{
+		padding: 0px 140px;
+	}
+	.serviceBox:nth-child(2n) {
+		margin-right: 7%;
+	}
+}
+
+@media all and (max-width: 1280px){
+	
+	.wrapper{
+		padding: 0px 120px;
+	}
+	.serviceBox:nth-child(2n) {
+		margin-right: 10%;
+	}
+}
+
+@media all and (max-width: 1240px){
+	
+	.wrapper{
+		padding: 0px 100px;
+	}
+}
+@media all and (max-width: 1200px){
+	
+	.wrapper{
+		padding: 0px 70px;
+	}
+}
+
+@media all and (max-width: 1150px){
+	
+	.picComp {
+		width: 63%;
+	}
+	.skillBars {
+		width: 37%;
+	}
+	.member img {
+		width: 200px;
+	}
+	.serviceBox:nth-child(2n) {
+		margin-right: 14%;
+	}
+	.serviceBox {
+		width: 43%;
+	}
+	.picOne, .picTwo, .picThree, .picFour, .picSix, .picSeven, .picEight{
+		width: 22%;
+		padding: 115px 0px;
+	}
+	.picFive {
+		width: 22%;
+		padding: 114px 0px 115px 0px;
+	}
+	.imgBox {
+		margin-right: 3%;
+	}
+	.brandBox {
+		margin-right: 35px;
+	}
+	.bigSpan {
+		font-size: 29px;
+	}
+}
+
+@media all and (max-width: 1080px){
+
+	.wrapper {
+		padding: 0px 60px;
+	}
+	.picComp {
+		width: 61%;
+	}
+	.skillBars {
+		width: 39%;
+	}
+	.whiteBorder {
+		width: 23%;
+	}
+	.member img {
+		width: 190px;
+	}
+	.member {
+		padding: 0px 25px;
+	}
+	.wide {
+		width: 41%;
+	}
+	.brandBox {
+		margin-right: 30px;
+	}
+	.clientImg {
+		width: 20%;
+		padding-top: 20px;
+	}
+	.goLeft img{
+		width: 30px;
+	}
+	.goRight img{
+		width: 30px;
+	}
+	.border {
+		width: 21%;
+	}
+
+}
+
+@media all and (max-width: 1050px){
+
+	.border {
+		width: 24%;
+	}
+	.border {
+		width: 44%;
+	}
+	.brandBox {
+		margin-right: 15px;
+	}
+	.addressBar {
+		padding: 85px 85px;
+	}
+
+}
+
+@media all and (max-width: 1000px){
+
+	.member img {
+		width: 170px;
+	}
+	.member {
+		padding: 0px 20px;
+	}
+	.border {
+		width: 45%;
+	}
+	.brandBox {
+		width: 30%;
+	}
+	.brandsBar{
+		margin-bottom: 50px;
+	}
+	.addressBar {
+		padding: 75px 75px;
+	}
+
+}
+
+@media all and (max-width: 960px){
+	
+	.firstRow, .secondRow, .thirdRow{
+		min-height: 180px;
+	}
+	.box{
+		min-height: 180px;
+	}	
+	.name {
+		padding-top: 30px;
+	}	
+	.member img {
+		width: 150px;
+	}
+	.member {
+		padding: 0px 15px;
+	}
+	h5 {
+		font-size: 28px;
+	}	
+	.border {
+		width: 48%;
+	}	
+	.addressBar {
+		padding: 65px 65px;
+	}	
+	
+}
+
+@media all and (max-width: 920px){
+	
+	.picComp {
+		width: 60%;
+	}
+	.skillBars {
+		width: 40%;
+	}
+	h5 {
+		font-size: 26px;
+	}
+	.border {
+		width: 51%;
+	}
+	.bigH5 {
+		font-size: 37px;
+	}
+	.job {
+		font-size: 24px;
+	}
+	.picOne, .picTwo, .picThree, .picFour, .picSix, .picSeven, .picEight, .picFive {
+		padding: 95px 0px;
+	}
+	.skillButton {
+		padding: 15px 25px;
+	}
+	.clientText {
+		width: 47%;
+		margin-right: 0px;
+	}
+	.clientImg {
+		padding-top: 30px;
+	}
+	.goLeft img {
+		width: 25px;
+		margin-right: 14%;
+	}
+	.goRight img {
+		width: 25px;
+	}
+	.addressBar {
+		padding: 55px 55px;
+	}
+	.social img {
+		width: 45px;
+	}
+
+}
+
+@media all and (max-width: 870px){
+
+	.firstRow, .secondRow, .thirdRow{
+			min-height: 170px;
+		}
+	.box{
+		min-height: 170px;
+	}	
+	.name {
+		padding-top: 20px;
+	}	
+
+	.member {
+		padding: 0px 10px;
+	}
+	.border {
+		width: 55%;
+	}
+	.bigH5 {
+		font-size: 35px;
+	}
+	.brandBox {
+		width: 40%;
+	}
+	.goLeft {
+		margin-right: 13%;
+	}
+	.addressBar {
+		padding: 50px 50px;
+	}
+	.location {
+		padding-right: 165px;
+	}
+}
+
+@media all and (max-width: 820px){
+
+	.firstRow, .secondRow, .thirdRow{
+		min-height: 155px;
+	}
+	.box{
+		min-height: 155px;
+	}	
+	.name {
+		padding-bottom: 25px;
+	}	
+	h1 {
+		font-size: 34px;
+	}
+	#Actual {
+		padding: 50px 0px 30px 0px;
+	}
+	.picComp {
+		width: 55%;
+	}
+	.skillBars {
+		width: 45%;
+	}
+	.border {
+		width: 56%;
+	}
+	.bigH5 {
+		font-size: 34px;
+	}
+	.serviceBox {
+		width: 45%;
+	}
+	.serviceBox:nth-child(2n) {
+		margin-right: 10%;
+	}
+	.picOne, .picTwo, .picThree, .picFour, .picSix, .picSeven, .picEight, .picFive {
+		padding: 85px 0px;
+	}
+
+	.skillButton {
+		margin-top: 70px;
+	}
+	.clientText {
+		width: 50%;
+	}
+	.goLeft {
+		margin-right: 10%;
+	}
+	.location {
+		padding-right: 155px;
+	}
+	.addressBar {
+		padding: 45px 45px;
+	}
+
+}
+
+@media all and (max-width: 800px){
+	
+	.backgroundImg {
+		padding: 115px 0px;
+	}
+	.box {
+		min-height: 145px;
+	}
+	.firstRow, .secondRow, .thirdRow {
+		min-height: 145px;
+	}	
+	h1 {
+		font-size: 33px;
+		margin-bottom: 25px;
+	}	
+	.name {
+		padding-bottom: 20px;
+	}	
+	#Trigger img{
+		width: 70px;
+	}
+	.navigation li a {
+		font-size: 19px;	
+	}	
+	h2 {
+		font-size: 28px;	
+	}
+	.skillButton {
+		padding: 12px 20px;	
+		margin-top: 50px;
+	}	
+	.member img {
+		width: 130px;
+	}	
+	h5, .job {
+		font-size: 22px;
+	}	
+	.numberBox {
+		padding: 0px 30px;
+	}
+	.serviceBox:nth-child(2n) {
+		margin-right: 6%;
+	}
+	.serviceBox {
+		width: 47%;
+	}
+	.picOne, .picTwo, .picThree, .picFour, .picSix, .picSeven, .picEight, .picFive {
+		padding: 75px 0px;
+	}
+	.linkMe {
+		font-size: 15px;
+	}
+	.clientText {
+		width: 56%;
+	}
+	.goLeft {
+		margin-right: 7%;
+	}
+	.clientImg {
+		width: 21%;
+	}
+	.location {
+		padding-right: 140px;
+	}
+	.addressBar {
+		padding: 35px 35px;
+	}
+	.greyh4 {
+		font-size: 19px;
+	}
+
+}
+
+@media all and (max-width: 760px){
+	
+	.backgroundImg {
+		padding: 110px 0px;
+	}
+	.wrapper {
+		padding: 0px 45px;
+	}
+	h2 {
+		font-size: 27px;
+	}
+	.picComp {
+		width: 53%;
+	}
+	.skillBars {
+		width: 47%;
+	}
+	.member img {
+		width: 120px;
+	}
+	h5, .job {
+		font-size: 20px;
+	}
+	.bigH5 {
+		font-size: 32px;
+	}
+	.serviceBox {
+		width: 46%;
+	}
+	.serviceBox:nth-child(2n) {
+		margin-right: 8%;
+	}
+	.goLeft img {
+		width: 22px;
+		margin-right: 12%;
+	}
+	.goRight img {
+		width: 22px;
+	}
+	.clientImg {
+		width: 23%;
+	}
+	.location {
+		padding-right: 125px;
+	}
+	.addressBar {
+		padding: 35px 30px;
+	}
+	.social img {
+		width: 40px;
+	}
+	h6 {
+		font-size: 20px;
+	}
+
+}
+
+@media all and (max-width: 720px){
+
+	.backgroundImg {
+		padding: 105px 0px;
+	}
+	h1 {
+		font-size: 30px;
+		margin-bottom: 16px;
+	}
+	.subtitle {
+		font-size: 19px;
+	}
+	.firstRow, .secondRow, .thirdRow {
+		min-height: 130px;
+	}
+	.box {
+		min-height: 130px;
+	}
+	#Trigger img {
+		width: 63px;
+	}
+	.inic {
+		display: none;
+	}
+	.navigation{
+		float: none;
+	}
+	.border {
+		width: 60%;
+	}
+	.bigH5 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	.serviceBox:nth-child(2n) {
+		margin-right: 0px;
+	}
+	.serviceBox {
+		width: 100%;
+		padding: 0px 50px;
+		margin-bottom: 80px;
+	}
+	.picOne, .picTwo, .picThree, .picFour, .picSix, .picSeven, .picEight, .picFive {
+		padding: 65px 0px;
+	}
+	.bigSpan {
+		font-size: 27px;
+	}
+	.clientText {
+		width: 53%;
+	}
+	.location {
+		padding-right: 110px;
+	}
+	h6 {
+		font-size: 19px;
+	}
+	.social img {
+		width: 38px;
+	}
+	.details {
+		text-align: center;
+	}
+	.inputDetails {
+		width: 70%;
+		float: none;
+		display: inline-block;
+	}
+	.msgDetails {
+		width: 70%;
+		float: none;
+		margin: 0 auto;
+	}
+	.putin, textarea {
+		width: 100%;
+	}
+	.greyh4 {
+		font-size: 18px;
+	}
+
+}
+
+@media all and (max-width: 680px){
+
+	.backgroundImg {
+		padding: 95px 0px;
+	}
+	h1 {
+		font-size: 27px;
+		margin-bottom: 12px;
+	}
+	.subtitle {
+		letter-spacing: 1px;
+	}
+	.wrapper {
+		padding: 0px 35px;
+	}
+	.box {
+		min-height: 125px;
+	}
+	.firstRow, .secondRow, .thirdRow {
+		min-height: 125px;
+	}
+	.navigation li a {
+		font-size: 18px;
+	}
+	.picComp {
+		width: 75%;
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 80px;
+	}
+	.skillBars {
+		width: 70%;
+		float: none;
+		margin: 0 auto;
+		padding-left: 0px;
+	}
+	.bigSpan {
+		font-size: 25px;
+	}
+	.clientText {
+		padding-top: 0px;
+	}
+	.location {
+		padding-right: 100px;
+	}
+	h6 {
+		font-size: 18px;
+	}
+	.social img {
+		width: 35px;
+	}
+	.greyh4 {
+		font-size: 17px;
+		margin-top: 3px;	
+	}
+
+}
+
+@media all and (max-width: 640px){
+
+	.backgroundImg {
+		padding: 85px 0px;
+	}
+	.firstRow, .secondRow, .thirdRow {
+		min-height: 120px;
+	}
+	.box {
+		min-height: 120px;
+	}
+	.skillButton {
+		padding: 10px 15px;
+		margin-top: 45px;
+	}
+	.member img {
+		width: 110px;
+	}
+	h5, .job {
+		font-size: 18px;
+	}
+	.border {
+		width: 62%;
+	}
+	.bigH5 {
+		font-size: 28px;
+	}
+	.cv {
+		padding: 90px 0px;
+	}
+	.clients {
+		padding-top: 75px;
+	}
+	.bigSpan {
+		font-size: 23px;
+	}
+	.clientImg {
+		width: 25%;
+	}
+	.goLeft {
+		margin-right: 4%;
+	}
+	.location {
+		padding-right: 90px;
+	}
+	.addressBar {
+		padding: 35px 25px;
+		margin-bottom: 280px;
+	}
+	h6 {
+		font-size: 17px;
+	}
+	.greyh4 {
+		font-size: 16px;
+	}
+
+}
+
+@media all and (max-width: 620px){
+
+	.backgroundImg {
+		padding: 75px 0px;
+	}
+	.wrapper {
+		padding: 0px 25px;
+	}
+	.name {
+		padding-bottom: 15px;
+	}
+	#Trigger img {
+		width: 57px;
+	}
+	.navigation li a {
+		font-size: 17px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	.picComp {
+		width: 80%;
+	}
+	.member {
+		width: 49%;
+		float: none;
+		margin-bottom: 40px;
+		text-align: center;
+		display: inline-block;
+	}
+	.member img {
+		width: 145px;
+	}
+	.border {
+		width: 65%;
+	}
+	.bigH5 {
+		font-size: 27px;
+	}
+	.numberBox {
+		padding: 0px 20px;
+	}
+	.linkMe {
+		font-size: 13px;
+	}
+	.picOne, .picTwo, .picThree, .picFour, .picSix, .picSeven, .picEight, .picFive {
+		padding: 60px 0px;
+	}
+	.clients {
+		padding-top: 70px;
+	}
+	.bigSpan {
+		font-size: 21px;
+	}
+	.location {
+		padding-right: 80px;
+	}
+	.addressBar {
+		padding: 35px 20px;
+		margin-bottom: 260px;
+	}
+	.greyh4 {
+		font-size: 15px;
+	}
+	p {
+		font-size: 14px;
+	}
+
+}
+
+@media all and (max-width: 580px){
+
+	h1 {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.box {
+		min-height: 110px;
+	}
+	.firstRow, .secondRow, .thirdRow {
+		min-height: 110px;
+	}
+	.backgroundImg {
+		padding: 70px 0px;
+	}
+	.empty, .five {
+		display: none;
+	}
+	.name {
+		width: 60%;
+	}
+	.box {
+		width: 20%;
+	}
+	.eleven{
+		float: right;
+	}
+	.nine {
+		margin-left: 20%;
+	}
+	.clientText {
+		width: 51%;
+		margin-top: -30px;
+	}
+	.location {
+		padding-right: 70px;
+	}
+	.addressBar {
+		margin-bottom: 240px;
+	}
+	.greyh4 {
+		font-size: 14px;
+	}
+	.skillButton {
+		font-size: 17px;
+	}
+
+}
+
+@media all and (max-width: 530px){
+
+	h1 {
+		font-size: 24px;
+	}
+	#Trigger img {
+		width: 55px;
+	}
+	.backgroundImg {
+		padding-bottom: 50px;
+	}
+	.navigation li a {
+		font-size: 16px;
+	}
+	.navigation li {
+		margin-right: 20px;
+	}
+	.bigH5 {
+		font-size: 25px;
+	}
+	h5, .job {
+		font-size: 17px;
+	}
+	.numberBox {
+		padding: 0px 15px;
+	}
+	.serviceBox {
+		padding: 0px 28px;
+	}
+	.picOne, .picTwo, .picThree, .picFour, .picFive, .picSix, .picSeven, .picEight {
+		width: 40%;
+		margin-right: 5%;
+		float: none;
+		display: inline-block;
+		padding: 95px 0px;
+		margin-right: 5%;
+	}
+	.imgBox:nth-child(2n+0) {
+		margin-right: 0px;
+	}
+	.brandBox {
+		width: 46%;
+	}
+	.clientText {
+		width: 50%;
+		margin-top: 0px;
+	}
+	.location {
+		padding-right: 60px;
+	}
+	.addressBar {
+		margin-bottom: 220px;
+	}
+	h6 {
+		font-size: 16px;
+	}
+	.greyh4 {
+		font-size: 13px;
+		margin-top: 5px;
+	}
+
+}
+
+@media all and (max-width: 500px){
+
+	.backgroundImg {
+		padding-bottom: 10px;
+	}
+	.subtitle {
+		word-break: break-word;
+	}
+	.name {
+		padding: 0px 10px 8px 10px;
+	}
+	#Trigger {
+		display: none;
+	}
+	#Slider{
+		display: none;
+	}
+	.brandBox {
+		width: 44%;
+	}
+	.location {
+		padding-right: 55px;
+	}
+	.clientText{
+		width: 46%;
+	}
+	.inputDetails, .msgDetails {
+		width: 75%;
+	}
+	.greyh4 {
+		float: none;
+		display: block;
+		margin-bottom: 10px;
+	}
+	footer p {
+		float: none;
+		display: block;
+	}
+
+}
+@media all and (max-width: 480px){
+
+	.wrapper {
+		padding: 0px 15px;
+	}
+	.brandBox {
+		width: 45%;
+	}
+	.five{
+		display: inline-block;
+	}
+	.name {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.box{
+		width: 25%;
+	}
+	.border {
+		width: 83%;
+	}	
+	.one {
+		margin-left: 50%;
+	}
+	.seven {
+		margin-left: 25%;
+	}
+	.nine {
+		margin-left: 0px;
+	}
+	.location {
+		padding-right: 50px;
+	}
+	.addressBar {
+		margin-bottom: 200px;
+	}
+	.whiteh6 {
+		font-size: 15px;
+		margin-bottom: 15px;
+	}
+	.social img {
+		width: 33px;
+	}
+
+}
+
+@media all and (max-width: 450px){
+	
+	.box {
+		width: 28%;
+		min-height: 125px;	
+	}	
+	.one {
+		margin-left: 44%;
+	}	
+	.three {
+		margin-left: 16%;
+	}	
+	.seven {
+		margin-left: 0px;
+	}	
+	.six {
+		margin-left: 7%;
+	}	
+	.eleven {
+		float: left;
+	}
+	.nine{
+		display: none;
+	}	
+	.ten {
+		margin-left: 7%;
+	}	
+	.skillBars {
+		width: 65%;
+	}	
+	.member img {
+		width: 135px;
+	}	
+	.border {
+		width: 84%;
+	}	
+	.bigH5 {
+		font-size: 24px;
+	}	
+	.numberBox {
+		padding: 0px 10px;
+	}	
+	.bigSpan {
+		font-size: 18px;
+	}	
+	.picOne, .picTwo, .picThree, .picFour, .picFive, .picSix, .picSeven, .picEight {
+		padding: 85px 0px;
+	}
+	.clientImg {
+		width: 40%;
+		float: none;
+		margin-right: 0px;
+	}	
+	.clientText {
+		width: 85%;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}	
+	.goLeft, .goRight{
+		display: none;
+	}
+	.location {
+		padding-right: 40px;
+	}	
+	.inputDetails, .msgDetails {
+		width: 80%;
+	}	
+	
+}	
+	
+@media all and (max-width: 420px){
+	
+	.box {
+		min-height: 135px;
+	}	
+	.numberBox {
+		padding: 0px 4px;
+	}	
+	.imgBox:nth-child(2n+0) {
+		margin-right: 0px;
+	}	
+	.brandBox {
+		width: 35%;
+	}		
+	.border {
+		width: 90%;
+	}	
+}		
+	
+@media all and (max-width: 400px){
+	
+	.box {
+		width: 33%;
+	}	
+	.one {
+		margin-left: 33%;
+	}	
+	.three, .six, .ten {
+		margin-left: 0px;
+	}	
+	.member img {
+		width: 130px;
+	}	
+	.border {
+		width: 98%;
+	}	
+	.numberBox {
+		width: 50%;	
+	}	
+	.serviceBox {
+		padding: 0px 0px 0px 25px;
+	}	
+	.picOne, .picTwo, .picThree, .picFour, .picFive, .picSix, .picSeven, .picEight {
+		padding: 75px 0px;
+	}	
+	.addressBar {
+		padding: 35px 15px;
+		margin-bottom: 180px;
+	}	
+	.inputDetails, .msgDetails {
+		width: 85%;
+	}	
+	.putin, textarea {
+		padding: 15px;	
+	}	
+	
+}		
+
+@media all and (max-width: 370px){
+	
+	.box {
+		min-height: 120px;
+	}	
+	.member img {
+		width: 120px;
+	}	
+	.border {
+		width: 83%;
+	}	
+	.textBox {
+		width: 84%;
+		margin-top: 0px;
+	}	
+	.serviceBox img {
+		width: 16%;
+	}	
+	.picOne, .picTwo, .picThree, .picFour, .picFive, .picSix, .picSeven, .picEight {
+		padding: 55px 0px;
+	}	
+	.location {
+		padding-right: 35px;
+	}
+	.inputDetails, .msgDetails {
+		width: 90%;
+	}
+	.clientImg {
+		width: 43%;
+	}
+}		
+@media all and (max-width: 350px){
+	
+	.box {
+		width: 40%;
+	}
+	.one {
+		margin-left: 20%;
+	}	
+	.box.five{
+		width: 20%;
+	}	
+	.box.six, .box.eight{
+		width: 30%;
+	}
+	.ten{
+		margin-left: 10%;
+	}
+	.skillBars {
+		width: 70%;
+	}	
+	.member img {
+		width: 105px;
+	}	
+	.numberBox {
+		padding: 0px 20px;
+	}
+	.clientImg {
+		width: 45%;
+	}
+	.putin, textarea {
+		padding: 13px;
+	}	
+	.inputDetails, .msgDetails {
+		width: 95%;
+	}	
+	footer p {
+		font-size: 13px;
+	}	
+	
+}		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
