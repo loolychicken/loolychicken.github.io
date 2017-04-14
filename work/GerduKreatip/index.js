@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
-	 $("#Trigger").click(function () {
-          $("#Slider").toggleClass("slidedown slideup");
+	 $("#trigger").click(function () {
+          $("#slider").toggleClass("slidedown slideup");
           //  if ($("#Slider").hasClass("slideup"))
           //    $("#Slider").removeClass("slideup").addClass("slidedown");
           //  else
@@ -52,5 +52,6 @@ $(document).ready(function(){
 			width:$(this).attr('data-percent')
 		},6000);
 	});
+	
 
 });	

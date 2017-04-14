@@ -156,11 +156,12 @@ h1 span{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#Trigger{
+#trigger{
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
-#Trigger:focus{
+#trigger:focus{
 	outline: none;
 }
 #Actual{
@@ -1091,7 +1092,7 @@ p span{
 	.name {
 		padding-bottom: 20px;
 	}	
-	#Trigger img{
+	#trigger img{
 		width: 70px;
 	}
 	.navigation li a {
@@ -1221,7 +1222,7 @@ p span{
 	.box {
 		min-height: 130px;
 	}
-	#Trigger img {
+	#trigger img {
 		width: 63px;
 	}
 	.inic {
@@ -1414,7 +1415,7 @@ p span{
 	.name {
 		padding-bottom: 15px;
 	}
-	#Trigger img {
+	#trigger img {
 		width: 57px;
 	}
 	.navigation li a {
@@ -1527,7 +1528,7 @@ p span{
 	h1 {
 		font-size: 24px;
 	}
-	#Trigger img {
+	#trigger img {
 		width: 55px;
 	}
 	.backgroundImg {
@@ -1596,10 +1597,10 @@ p span{
 	.name {
 		padding: 0px 10px 8px 10px;
 	}
-	#Trigger {
+	#trigger {
 		display: none;
 	}
-	#Slider{
+	#slider{
 		display: none;
 	}
 	.brandBox {
@@ -1872,6 +1873,7 @@ p span{
 	
 }		
 	
+
 
 
 
