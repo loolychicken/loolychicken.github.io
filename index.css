@@ -125,6 +125,9 @@ html {
 .navigation li:last-child {
     margin-right: 0%;
 }
+.homeLink, .aboutMeLink, .workLink, .contactLink {
+        padding: 3px 0px;
+    }
 .fp-viewing-firstPage .homeLink,
 .fp-viewing-secondPage .aboutMeLink,
 .fp-viewing-3rdPage .workLink,
