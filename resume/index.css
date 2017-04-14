@@ -141,34 +141,65 @@ p {
 .boxAbout:last-child {
     margin-bottom: 0px;
 }
-hr {
+.contactWrapper {
+	width: 80px;
+	display: block;
     margin-bottom: 20px;
-    border: none;
-    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
 }
-.chr {
-    width: 80px;
+.profileWrapper {
+	width: 60px;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
 }
-.phr {
-    width: 60px;
+.skillsWrapper {
+	width: 220px;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
 }
-.shr {
-    width: 220px;
+.workWrapper {
+	width: 55px;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
 }
-.whr {
-    width: 55px;
+.eduWrapper {
+	width: 95px;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
 }
-.ehr {
-    width: 95px;
-}
-.longhr {
-    width: 150px;
-}
-.normalhr {
-    width: 140px;
-}
-.khr {
+.srbC{
     width: 75px;
+	display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
+}
+.srbP{
+	width: 55px;
+	display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
+}
+.srbZ{
+	width: 160px;
+	display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
+}
+.srbR{
+	width: 145px;
+	display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
+}
+.srbO{
+	width: 135px;
+	display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
 }
 .buttonStyle {
     width: 100px;
@@ -199,6 +230,7 @@ hr {
     margin-right: 5px;
 }
 .langLinks {
+	width: 70px;
     position: absolute;
     top: 20px;
     font-weight: 600;
@@ -444,6 +476,36 @@ hr {
     .le {
         padding: 179px 25px;
     }
+	.srbC {
+		width: 70px;
+	}
+	.srbP {
+		width: 50px;
+	}
+	.srbZ {
+		width: 145px;
+	}
+	.srbR {
+		width: 135px;
+	}
+	.srbO {
+		width: 125px;
+	}
+	.contactWrapper {
+		width: 75px;
+	}
+	.profileWrapper {
+		width: 55px;
+	}
+	.workWrapper {
+		width: 50px;
+	}
+	.eduWrapper {
+		width: 90px;
+	}
+	.skillsWrapper {
+		width: 205px;
+	}
 }
 @media all and (max-width: 830px) {
     .le {
@@ -496,6 +558,9 @@ hr {
     }
 }
 @media all and (max-width: 670px) {
+	.langLinks {
+		left: 55%;
+	}
     .myImage {
         width: 160px;
         height: 160px;
@@ -512,6 +577,36 @@ hr {
     h2 {
         font-size: 20px;
     }
+	.srbC {
+		width: 65px;
+	}
+	.srbP {
+		width: 45px;
+	}
+	.srbZ {
+		width: 140px;
+	}
+	.srbR {
+		width: 130px;
+	}
+	.srbO {
+		width: 120px;
+	}
+	.contactWrapper {
+		width: 70px;
+	}
+	.profileWrapper {
+		width: 50px;
+	}
+	.workWrapper {
+		width: 45px;
+	}
+	.eduWrapper {
+		width: 85px;
+	}
+	.skillsWrapper {
+		width: 195px;
+	}
     .ls {
         padding: 191px 18px;
     }
@@ -548,10 +643,18 @@ hr {
         float: none;
         width: 100%;
     }
-    .side {
-        right: 0;
-        bottom: 30px;
-    }
+   .buttonStyle {
+		width: 80px;
+		height: 70px;
+		padding: 15px 5px;
+		border-radius: 50%;
+		line-height: 20px;
+		margin-left: 30px;
+	}	
+	.langLinks {
+		left: 85%;
+		top: 30px;
+	}
 }
 @media all and (max-width: 600px) {
     .imgLeft {
@@ -570,6 +673,9 @@ hr {
     .jd {
         font-size: 23px;
     }
+	 .buttonStyle {
+		margin-left: 10px;
+	}	
 }
 @media all and (max-width: 550px) {
     .imgLeft,
@@ -585,3 +691,21 @@ hr {
         margin-top: 30px;
     }
 }
+@media all and (max-width: 400px) {
+	.langLinks {
+		left: 83%;
+	}
+	 .buttonStyle {
+		margin-left: 0px;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
