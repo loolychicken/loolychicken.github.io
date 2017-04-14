@@ -1146,6 +1146,7 @@ hr {
     .active .pageName {
         top: 94%;
         opacity: 1;
+		display: block;
         left: 35%;
     }
     .inactive .pageCName {
@@ -1153,7 +1154,6 @@ hr {
         opacity: 0;
     }
     .pageName {
-        display: block;
         left: -5%;
         top: 94%;
         position: relative;
