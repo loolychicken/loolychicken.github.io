@@ -61,9 +61,9 @@ nav{
   background: #E68282;
   width: 100%;
   left:0;
-  top: -400%;
+  top: -300px;
   z-index: 999;
-  transition-timing: 1s;
+  transition: all 1s ease-out;
   box-shadow: 0 0 10px #000;
 }
 nav li{

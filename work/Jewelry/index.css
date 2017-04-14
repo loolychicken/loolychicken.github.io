@@ -30,7 +30,7 @@ html, body,.bodywrapper{
 .icon {
     margin-left: 15px;
     float: left;
-    margin-left: 50;
+    margin-left: 20px;
 }
 .icon img{
 	width: 40px;
@@ -45,9 +45,9 @@ html, body,.bodywrapper{
   background: #EFEEF4;
   width: 100%;
   left:0;
-  top: -400%;
+  top: -350px;
   z-index: 999;
-  transition-timing: 1s;
+  transition: all 1s ease-in;
   box-shadow: 0 0 10px #000;
 }
 .navigation li{
@@ -71,7 +71,7 @@ html, body,.bodywrapper{
 	 margin-right: 30px;
 }
 .down{
-  top: 75px;
+  top: 72px;
 }
 .siteheader{
 	width: 100%;
@@ -555,6 +555,9 @@ p{
     .aboutText {
         width: 90%;
     }
+	.inMenuLogo {
+		margin-left: -23px;
+	}
 }
 @media all and (max-width: 750px) {
     .sitecontent {
@@ -567,6 +570,9 @@ p{
     .product:last-child {
         margin-left: 8%;
     }
+	.icon img {
+		width: 33px;
+	}
 }
 @media all and (max-width: 650px) {
     .sitecontent {
@@ -642,11 +648,14 @@ p{
         height: 185px;
         padding: 10px 15px;
     }
+	.icon img {
+		width: 29px;
+	}
+	.inMenuLogo {
+		margin-left: -15px;
+	}
 }
 @media all and (max-width: 550px) {
-    .inMenuLogo {
-        width: 34%;
-    }
     .sitecontent {
         height: 280px;
     }
@@ -698,6 +707,12 @@ p{
     .boxstyle {
         width: 270px;
     }
+	.icon img {
+		width: 25px;
+	}
+	.inMenuLogo {
+		margin-left: -25px;
+	}
 }
 @media all and (max-width: 400px) {
     .aboutText {
@@ -721,9 +736,7 @@ p{
     h2 {
         font-size: 18px;
     }
-    .inMenuLogo {
-        width: 43%;
-    }
+
 }
 
 

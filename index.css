@@ -718,6 +718,12 @@ hr {
     }
 }
 @media all and (max-width: 800px) {
+	.active .pageCName {
+		left: 64%;
+	}
+	.active .pageCName {
+		left: 65%;
+	}
     .navigation li {
         margin-right: 10px;
         width: 90px;
@@ -730,10 +736,11 @@ hr {
     }
     .siteLink {
         top: 27%;
-        left: 65%;
+        left: 58%;
     }
     .descriptionBox {
         top: 43%;
+		left: 25%;
     }
     .workTitle {
         font-size: 38px;
@@ -883,6 +890,9 @@ hr {
         width: 35px;
         height: auto;
     }
+	.siteLink{
+		transition: all 1s ease-in-out;
+	}
     .workTitle {
         font-size: 33px;
     }
