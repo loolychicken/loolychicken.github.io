@@ -722,6 +722,7 @@ p{
 @media all and (max-width: 380px) {
     .sitecontent {
         height: 230px;
+		overflow: hidden;
     }
     .contentBox {
         width: 315px;
