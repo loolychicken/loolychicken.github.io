@@ -1107,7 +1107,7 @@ input {
         z-index: 10;
         background-color: #E2E2E2;
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .header {
         display: none;
