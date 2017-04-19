@@ -467,6 +467,10 @@ hr {
     overflow: visible;
     height: 100%;
 }
+.openMail{
+	text-decoration: none;
+	color: #3C3C3C;
+}
 @media all and (max-width: 1335px) {
     .workWrapper {
         width: 80%;

@@ -1,33 +1,33 @@
 
   $(document).ready(function(){
    
-	 $("#hp").click(function() {
+	 $(".hp").click(function() {
 
         $("body, html").animate({ "scrollTop":$("#1").offset().top }, 1500);
 		
     });
 	
 	
-	 $("#sp").click(function() {
+	 $(".sp").click(function() {
 
         $("body, html").animate({ "scrollTop":$("#2").offset().top }, 1500);
 		
     });
 	
-	$("#pp").click(function() {
+	$(".port").click(function() {
 
         $("body, html").animate({ "scrollTop":$("#3").offset().top }, 1500);
 		
     });
 	
-	$("#tp").click(function() {
+	$(".tp").click(function() {
 
         $("body, html").animate({ "scrollTop":$("#4").offset().top }, 1500);
 		
     });
 	
 	
-	$("#cp").click(function() {
+	$(".cp").click(function() {
 
         $("body, html").animate({ "scrollTop":$("#5").offset().top }, 1500);
 		
