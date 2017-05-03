@@ -45,7 +45,7 @@ html {
     box-shadow: 5px 5px 20px 2px rgba(136, 136, 136, 0.7);
 }
 .ls {
-    padding: 176px 30px;
+    padding: 187px 30px;
 }
 .right {
     width: 70%;
@@ -263,7 +263,7 @@ p {
 @media all and (max-width: 1300px) {
     .ls,
     .le {
-        padding: 187px 25px;
+        padding: 200px 25px;
     }
 }
 @media all and (max-width: 1250px) {
@@ -296,7 +296,7 @@ p {
 }
 @media all and (max-width: 1175px) {
     .ls {
-        padding: 197px 25px;
+        padding: 210px 25px;
     }
 }
 @media all and (max-width: 1145px) {
@@ -344,7 +344,7 @@ p {
         width: 37%;
     }
     .ls {
-        padding: 250px 25px;
+        padding: 225px 25px;
     }
     .le {
         padding: 207px 25px;
@@ -353,6 +353,9 @@ p {
 @media all and (max-width: 1090px) {
     .le {
         padding: 228px 25px;
+    }
+	.ls {
+        padding: 250px 25px;
     }
 }
 @media all and (max-width: 1050px) {
@@ -383,17 +386,13 @@ p {
         width: 65%;
     }
     .ls {
-        padding: 215px 25px;
+        padding: 225px 25px;
     }
     .le {
         padding: 189px 25px;
     }
 }
-@media all and (max-width: 930px) {
-    .le {
-        padding: 203px 25px;
-    }
-}
+
 @media all and (max-width: 930px) {
     .mainPage {
         width: 86%;
@@ -410,7 +409,7 @@ p {
         width: 64%;
     }
     .ls {
-        padding: 218px 25px;
+        padding: 230px 25px;
     }
 }
 @media all and (max-width: 915px) {
@@ -418,7 +417,7 @@ p {
         width: 87%;
     }
     .ls {
-        padding: 203px 25px;
+        padding: 211px 25px;
     }
     h1 {
         font-size: 40px;
