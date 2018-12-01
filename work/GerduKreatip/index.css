@@ -47,6 +47,11 @@ body,html{
 	width: 16.6%;
 	min-height: 200px;
 	float: left;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .empty{
 	background-color: transparent;
@@ -323,14 +328,19 @@ h3{
     margin-top: 80px;
     padding: 15px 30px;
 	cursor: pointer;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .skillButton:focus{
 	outline: none;
 }
-.skillButton:active{
-	font-size: 19px;
+.skillButton:hover{
 	box-shadow: 10px 10px 5px #eee;
 }
+
 .ourTeam{
 	position: relative;
 	width: 100%;
@@ -434,9 +444,10 @@ h5{
 	float: left;
 	text-align: left;
 	margin-bottom: 100px;
+	
 }
 .serviceBox:nth-child(2n){
-	margin-right: 5%;
+	margin-right: 10%;
 }
 .serviceBox img{
 	float: left;
@@ -448,6 +459,10 @@ h5{
 	padding-left: 20px;
     margin-top: 15px;
 }
+.serviceBox:hover h6{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
 h6{
 	font-family: 'Oswald', sans-serif;
 	font-size: 22px;
@@ -455,6 +470,11 @@ h6{
 	color: #1ABB9C;
 	font-weight: 300;
 	margin-bottom: 5px;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .smallSpan{
 	font-family: 'Oswald', sans-serif;
@@ -483,6 +503,11 @@ h6{
 	float: left;
 	margin-right: 2%;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .imgBox:nth-child(8){
 	margin-right: 0px;
@@ -504,6 +529,11 @@ h6{
 	font-size: 16px;
 	padding: 10px 15px;
 	background-color: #21D9B5;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .linkMe:focus{
 	outline: none;

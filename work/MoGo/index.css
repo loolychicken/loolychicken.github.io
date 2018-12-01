@@ -499,11 +499,10 @@ button.accordion.active:after {
 .teamBox:last-child{
 	margin-right: 0px;
 }
-.designerPhoto{
-	display: inline-block;
-	height: 470px;
+img.designerPhoto{
 	width: 100%;
-	margin-bottom: 40px;
+	height: 100%;
+	object-fit: cover;
 }
 .designerLink1{
 	display: inline-block;

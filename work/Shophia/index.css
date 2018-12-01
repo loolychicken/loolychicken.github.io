@@ -244,7 +244,6 @@ html {
     padding-bottom: 165px;
     text-align: center;
     z-index: 1;
-    top: -100px;
 }
 .borderLine {
     border: 2px solid #ffffff;
@@ -461,7 +460,7 @@ hr {
     background-repeat: no-repeat;
     min-height: 820px;
     text-align: center;
-    padding-top: 30%;
+    position: relative;
 }
 .firstRowL {
     background-image: url("images/img1.jpg");
@@ -472,7 +471,7 @@ hr {
     min-height: 400px;
     margin-bottom: 20px;
     text-align: center;
-    padding-top: 80%;
+    position: relative;
 }
 .secondRowL {
     background-image: url("images/img2.jpg");
@@ -482,7 +481,7 @@ hr {
     background-repeat: no-repeat;
     min-height: 400px;
     text-align: center;
-    padding-top: 80%;
+    position: relative;
 }
 .firstRowR {
     background-image: url("images/img4.jpg");
@@ -493,7 +492,7 @@ hr {
     min-height: 400px;
     margin-bottom: 20px;
     text-align: center;
-    padding-top: 80%;
+    position: relative;
 }
 .secondRowR {
     background-image: url("images/img5.jpg");
@@ -503,12 +502,16 @@ hr {
     background-repeat: no-repeat;
     min-height: 400px;
     text-align: center;
-    padding-top: 80%;
+    position: relative;
 }
 .hoverUp {
     padding: 10px 20px;
     font-size: 15px;
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .box:hover .hoverUp {
     display: inline-block;
