@@ -705,4 +705,15 @@
 	.box_showcase .decsription ul.classic_link li a{
 		margin-bottom: 0px;
 	}
+	header .menu ul li {
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	header .menu {
+	    width: 100%;
+	    transform: translate(-100%,0);
+	}
+	.header_wrapper {
+	    border-bottom: none;
+	}
 }
