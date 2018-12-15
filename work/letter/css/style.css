@@ -44,7 +44,7 @@ header{
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 4;
+	z-index: 6;
 }
 .header_wrapper{
 	width: 100%;
@@ -187,7 +187,7 @@ header.innactive .menu.show ul li a{
 	position: relative;
 }
 .hi .content{
-	z-index: 5;
+	z-index: 7;
     position: relative;
 }
 h1{
