@@ -1068,7 +1068,7 @@ hr {
     .active .webName {
         left: 5%;
         width: 5%;
-        top: 40%;
+        top: 20%;
         word-break: break-all;
         text-align: center;
     }
@@ -1121,6 +1121,7 @@ hr {
     }
     .active .sideText {
         left: 0%;
+        padding-top: 50px;
     }
     .inactive .sideText {
         top: 37%;
