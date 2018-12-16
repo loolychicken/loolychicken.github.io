@@ -471,6 +471,8 @@ hr {
 	text-decoration: none;
 	color: #3C3C3C;
 }
+
+/*==============RESPNSIVE=====================*/
 @media all and (max-width: 1335px) {
     .workWrapper {
         width: 80%;
@@ -1019,6 +1021,7 @@ hr {
     }
     h2 {
         font-size: 20px;
+        line-height: 1.5;
     }
     .active .webName {
         left: 67%;
@@ -1065,7 +1068,7 @@ hr {
     .active .webName {
         left: 5%;
         width: 5%;
-        top: 53%;
+        top: 40%;
         word-break: break-all;
         text-align: center;
     }
@@ -1245,8 +1248,12 @@ hr {
         width: 70%;
         left: 29%;
     }
+    .aboutMePage .active .sideText {
+	    padding-top: 70px;
+	}
     .bodyText {
         font-size: 16px;
+        line-height: 1.5;
     }
     .workTitle {
         font-size: 24px;
@@ -1263,6 +1270,7 @@ hr {
     }
     .active .goodbyeMsg {
         width: 87%;
+        padding-top: 50px;
     }
     .active .pageCName {
         left: 93%;
